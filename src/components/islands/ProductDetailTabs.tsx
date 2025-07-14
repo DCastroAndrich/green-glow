@@ -1,6 +1,6 @@
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import { Plant, Heart, HandsClapping, WarningCircle } from "@phosphor-icons/react";
-import type { Product } from "@/data/products-data";
+import type { Product, Variant } from "@/data/products-data";
 
 interface ProductDetailTabsProps {
   product: Product;
@@ -47,7 +47,7 @@ const ProductDetailTabs = ({ product }: ProductDetailTabsProps) => {
               Variedades
             </h4>
             <ul className="flex flex-col gap-3 w-full overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-hover:scrollbar-thumb-primary-600 scrollbar-thumb-primary-500  scrollbar-track-primary-900">
-              {product.variants!.map((variant, idx) => (
+              {product.variants!.map((variant: Variant, idx: number) => (
                 <li key={idx} className="font-fredoka text-primary-400">
                   <h5 className="text-sm tablet:text-lg laptop:text-2xl pb-2">
                     {variant.name}
@@ -68,7 +68,7 @@ const ProductDetailTabs = ({ product }: ProductDetailTabsProps) => {
             Aplicación
           </h4>
           <ul className="flex flex-col gap-3">
-            {product.howToUse.map((item, idx) => (
+            {product.howToUse.map((item: string, idx: number) => (
               <li key={idx} className="font-fredoka text-primary-400">
                 <p className="text-xs tablet:text-sm laptop:text-xl font-light text-balance tablet:text-pretty">
                   {item}
@@ -85,7 +85,7 @@ const ProductDetailTabs = ({ product }: ProductDetailTabsProps) => {
             Precauciones
           </h4>
           <ul className="flex flex-col gap-3">
-            {product.precautions.map((item, idx) => (
+            {product.precautions.map((item: string, idx: number) => (
               <li key={idx} className="font-fredoka text-primary-400">
                 <p className="text-xs tablet:text-sm laptop:text-xl font-light text-balance tablet:text-pretty">
                   {item}

@@ -1,17 +1,21 @@
 type Categories = 'Aceites' | 'Cosméticos' | 'Cremas' | 'Geles' | 'Unguentos';
 
-interface Product {
+export interface Product {
   id: number;
   name: string;
   shortDescription: string;
   category: Categories;
   description: string;
-  variants?: { name: string; description: string }[];
+  variants?: Variant[];
   howToUse: string[];
   precautions: string[];
   presentations: { size: string; price: number }[];
   imageUrl: string;
   isBestSeller: boolean;
+}
+export interface Variant {
+  name: string;
+  description: string;
 }
 
 export const products: Product[] = [
