@@ -1,14 +1,17 @@
 ---
+import { Info, Package } from '@phosphor-icons/react';
 const whatsappOptions = [
   {
     label: 'Información',
     number: '5492215676592',
     message: '¡Hola! Quiero más información sobre los productos.',
+    icon: Info,
   },
   {
     label: 'Pedidos',
     number: '542216828979',
     message: '¡Hola! Quiero hacer un pedido.',
+    icon: Package,
   },
 ];
 const { pathname } = Astro.url;
@@ -67,7 +70,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; *
     <!-- Poporver -->
     <div
       id="waMenu"
-      class="hidden absolute right-full mr-4 bottom-1/2 translate-y-1/2 flex-col bg-transparent backdrop-blur-md rounded-lg shadow-lg p-2 min-w-[180px] border border-primary-400"
+      class="hidden absolute right-full mr-4 bottom-1/2 translate-y-1/2 flex-col bg-primary-900/50 backdrop-blur-md rounded-lg shadow-lg p-2 min-w-[180px] border border-primary-400"
       role="menu"
       aria-label="Elegir tipo de contacto"
     >
@@ -81,6 +84,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; *
             role="menuitem"
             tabindex="0"
           >
+            {<opt.icon className="inline mr-2" size={20} />}
             {opt.label}
           </a>
         ))
