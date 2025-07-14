@@ -1,0 +1,146 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/globals.css';
+import { Image } from 'astro:assets';
+import lavanda from '@/assets/lavanda.jpg';
+import cera from '@/assets/cera.jpg';
+import canna from '@/assets/canna.jpg';
+import HowToBuyDialog from '@/components/islands/HowToBuyDialog';
+import ProductDetailTabs from '@/components/islands/ProductDetailTabs';
+import { products } from '../../../data/products-data.ts';
+import Breadcrumbs from '@/components/islands/Breadcrumbs';
+
+export async function getStaticPaths() {
+  return products.map((product) => {
+    const categoria = product.category.toLowerCase();
+    return {
+      params: {
+        categoria,
+        id: product.id.toString(),
+      },
+      props: { product, categoria },
+    };
+  });
+}
+
+const { product, categoria } = Astro.props;
+
+// Mapeo de categorías para mostrar nombres correctos
+const categoryNames: Record<string, string> = {
+  aceites: 'Aceites',
+  cosméticos: 'Cosméticos',
+  cremas: 'Cremas',
+  geles: 'Geles',
+  unguentos: 'Unguentos',
+};
+
+const displayCategoryName = categoryNames[categoria] || categoria;
+---
+
+<Layout title={`Green Glow - ${product.name}`}>
+  <main
+    class="flex flex-col justify-start w-full items-center h-fit min-h-screen gap-3"
+  >
+    <Breadcrumbs
+      productName={product.name}
+      categoryName={displayCategoryName}
+      categorySlug={categoria}
+    />
+
+    <div
+      class="flex flex-col desktop:flex-row justify-start w-full items-center desktop:items-start h-full min-h-screen gap-3"
+    >
+      <div
+        class="w-11/12 h-full laptop:h-[1200px] mt-4 desktop:ml-6 items-center"
+      >
+        <img
+          id="product-image"
+          src={product.imageUrl}
+          alt={product.name}
+          class={'w-full h-full object-cover rounded-3xl'}
+        />
+        <!--     <Image
+          src={lavanda}
+          alt={'producto'}
+          class={'col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
+        />
+        <Image
+          src={cera}
+          alt={'producto'}
+          class={' col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
+        />
+        <Image
+          src={canna}
+          alt={'producto'}
+          class={' col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
+        /> -->
+      </div>
+
+      <section
+        class="flex flex-col w-full h-fit justify-start items-center gap-7 p-4"
+      >
+        <!-- titulo -->
+        <div
+          class="flex flex-col w-full tablet:w-11/12 h-fit items-start justify-center gap-8"
+        >
+          <h2
+            class="w-full h-fit text-balance tablet:text-wrap font-commissioner font-semibold text-2xl tablet:text-4xl laptop:text-5xl text-primary-400 text-center"
+          >
+            {product.name}
+          </h2>
+          <h4
+            class="w-full h-fit text-balance tablet:text-wrap font-commissioner font-semibold text-xl tablet:text-2xl laptop:text-3xl text-primary-400 text-center"
+          >
+            {product.shortDescription}
+          </h4>
+          <!-- descripcion -->
+          <p
+            class="w-full h-fit text-pretty tablet:pl-4 font-fredoka font-light text-xs tablet:text-xl laptop:text-2xl text-primary-300"
+          >
+            {product.description}
+          </p>
+          <!-- precio -->
+          <!-- <p
+            class="w-full h-fit text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4"
+          >
+            $ {product.price}
+          </p> -->
+          <!-- CAMBIO SUGERIDO PARA VER EL PRECIO SEGUN EL ENVASE -->
+          <p
+            class="w-full h-fit text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4"
+          >
+            {
+              product.presentations.length === 1 ? (
+                <>
+                  ${product.presentations[0].price.toLocaleString('es-AR')}{' '}
+                  <span class="text-balance font-fredoka font-semibold text-lg tablet:text-xl text-primary-700 text-center tablet:text-left tablet:pl-4">
+                    ({product.presentations[0].size})
+                  </span>
+                </>
+              ) : (
+                <ul class="flex flex-col gap-6">
+                  {product.presentations.map((p) => (
+                    <li>
+                      <span class="text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4">
+                        ${p.price.toLocaleString('es-AR')}
+                      </span>
+                      <span class="text-balance font-fredoka font-semibold text-lg tablet:text-xl text-primary-700 text-center tablet:text-left tablet:pl-4">
+                        ({p.size})
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )
+            }
+          </p>
+        </div>
+        <div class="w-11/12 h-fit">
+          <HowToBuyDialog client:visible />
+        </div>
+        <div class="w-full tablet:w-11/12 bg-transparent">
+          <ProductDetailTabs client:visible product={product} />
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,46 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/globals.css';
+import { products } from '@/data/products-data';
+import ProductDisplay from '@/components/islands/ProductDisplay';
+import Breadcrumbs from '@/components/islands/Breadcrumbs';
+
+export async function getStaticPaths() {
+  const categories = ['Aceites', 'Cosméticos', 'Cremas', 'Geles', 'Unguentos'];
+  
+  return categories.map((categoria) => ({
+    params: { categoria: categoria.toLowerCase() },
+    props: { categoria, allProducts: products }
+  }));
+}
+
+const { categoria, allProducts } = Astro.props;
+const filteredProducts = allProducts.filter((product) => 
+  product.category.toLowerCase() === categoria.toLowerCase()
+);
+
+// Mapeo de categorías para mostrar nombres correctos
+const categoryNames: Record<string, string> = {
+  'aceites': 'Aceites',
+  'cosméticos': 'Cosméticos', 
+  'cremas': 'Cremas',
+  'geles': 'Geles',
+  'unguentos': 'Unguentos'
+};
+
+const displayName = categoryNames[categoria.toLowerCase()] || categoria;
+---
+
+<Layout title={`Green Glow - ${displayName}`}>
+  <main
+    class="flex flex-col justify-start w-full items-center h-fit min-h-screen gap-y-8"
+  >
+    <Breadcrumbs productName={displayName} categoryName={displayName} categorySlug={categoria.toLowerCase()} />
+    <div class="w-full text-center pl-4">
+      <h2 class="font-commissioner text-center text-primary-500 text-4xl font-semibold">
+        {displayName}
+      </h2>
+    </div>
+    <ProductDisplay client:load products={filteredProducts} selectedCategory={displayName} allProducts={allProducts} />
+  </main>
+</Layout> 

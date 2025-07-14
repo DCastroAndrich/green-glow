@@ -1,0 +1,49 @@
+---
+// Supports weights 300-700
+import '@fontsource-variable/fredoka';
+// Supports weights 100-900
+import '@fontsource-variable/commissioner';
+import Footer from '@/components/Footer.astro';
+import { Navbar } from '@/components/islands/Navbar';
+import FloatingButtons from '@/components/FloatingButtons.astro';
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- FAVICON start -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- FAVICON end -->
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-[url('/src/assets/bg.jpg')] min-h-screen w-full flex flex-col justify-between items-center"
+  >
+    <Navbar client:load />
+    <main class="flex-1 w-full flex flex-col items-center">
+      <slot />
+    </main>
+    <FloatingButtons />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

@@ -1,0 +1,169 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/globals.css';
+import { Image } from 'astro:assets';
+import aboutHeader from '@/assets/about-01.jpg';
+import about2 from '@/assets/about-2.jpg';
+import about3 from '@/assets/about-3.jpg';
+---
+
+<Layout title="Green Glow - Sobre nosotros">
+  <main class="flex flex-col justify-start w-full items-center h-fit gap-8">
+    <!-- HEADER -->
+
+    <div
+      class="w-full h-fit flex flex-col justify-start items-center gap-8 desktop:gap-14 p-12"
+    >
+      <div
+        class="w-full desktop:w-[1301px] h-fit flex flex-col justify-center items-center gap-2.5 desktop:gap-12"
+      >
+        <h2
+          class="font-commissioner text-primary-400 font-semibold text-2xl tablet:text-4xl desktop:text-7xl text-center w-full h-fit"
+        >
+          Confiamos en la fuerza de la naturaleza para proteger y realzar la
+          piel.
+        </h2>
+
+        <p
+          class="font-fredoka w-11/12 desktop:w-10/12 h-fit text-primary-100 font-normal desktop:font-light text-sm tablet:text-base desktop:text-3xl text-center text-pretty"
+        >
+          Desde siempre, he tenido una profunda conexión con la naturaleza y un
+          interés genuino por el bienestar de la piel. Esta pasión me llevó a
+          fundar Green Glow, una marca de fitocosmética dedicada a ofrecer
+          productos de la más alta calidad.
+        </p>
+      </div>
+      <Image
+        src={aboutHeader}
+        alt="Sobre nosotros"
+        class="w-10/12 h-[164px] tablet:h-[341px] desktop:h-[606px] rounded-2xl object-cover top-0"
+      />
+    </div>
+
+    <!-- MISION -->
+
+    <div
+      class="w-full h-fit desktop:h-[768px] flex flex-col desktop:flex-row justify-start desktop:justify-center bg-primary-100 items-center gap-8 p-12"
+    >
+      <h4
+        class="font-commissioner text-primary-900 font-semibold text-sm tablet:text-lg desktop:text-xl"
+      >
+        NUESTRA MISION
+      </h4>
+      <h3
+        class="font-commissioner text-primary-600 font-semibold text-xl tablet:text-3xl desktop:text-4xl text-center tablet:text-left w-full tablet:w-[520px] h-fit"
+      >
+        Promover el cuidado natural de la piel, fomentando una belleza saludable
+        y sostenible.
+      </h3>
+      <p
+        class="font-fredoka w-full tablet:w-[520px] h-fit text-primary-900 font-light text-xs tablet:text-base desktop:text-xl text-balance"
+      >
+        Green Glow nació de mi deseo de encontrar productos que no solo fueran
+        efectivos, sino también seguros y naturales. Quería crear una línea de
+        cosméticos que yo misma pudiera usar con total confianza, sabiendo que
+        cada ingrediente proviene de la naturaleza y está cuidadosamente
+        seleccionado por sus beneficios para la piel.
+      </p>
+    </div>
+    <div
+      class="w-full h-fit py-8 flex flex-col items-center justify-start gap-8"
+    >
+      <Image
+        src={about2}
+        alt="Sobre nosotros"
+        class="w-10/12 h-[164px] tablet:h-[341px] desktop:h-[606px] rounded-2xl object-cover"
+      />
+    </div>
+
+    <!-- COMPROMISO -->
+
+    <div
+      class="w-full h-fit desktop:h-[768px] flex flex-col desktop:flex-row justify-start desktop:justify-center bg-primary-100 items-center gap-8 p-12"
+    >
+      <h4
+        class="font-commissioner text-primary-900 font-semibold text-sm tablet:text-lg desktop:text-xl"
+      >
+        NUESTRO COMPROMISO
+      </h4>
+      <h3
+        class="font-commissioner text-primary-600 font-semibold text-xl tablet:text-3xl desktop:text-4xl text-center tablet:text-left w-full tablet:w-[520px] h-fit"
+      >
+        Ofrecer alternativas de belleza y cuidado personal elaborados con
+        ingredientes naturales y orgánicos cuidadosamente seleccionados.
+      </h3>
+      <div class="w-full tablet:w-[520px] h-fit">
+        <ul
+          class="font-fredoka w-full h-fit text-primary-900 font-light text-xs tablet:text-base desktop:text-xl text-balance flex flex-col gap-4"
+        >
+          <li class="list-disc text-primary-800">
+            <p>
+              <span class="font-semibold text-primary-800">Naturalidad:</span>
+              Todos nuestros productos están formulados con ingredientes de origen
+              natural, seleccionados cuidadosamente para su eficacia y pureza.
+            </p>
+          </li>
+          <li class="list-disc text-primary-800">
+            <p>
+              <span class="font-semibold text-primary-800">Innovación:</span>
+              A través de la investigación constante, buscamos las combinaciones
+              más efectivas de extractos vegetales para ofrecer soluciones únicas
+              en el cuidado de la piel.
+            </p>
+          </li>
+          <li class="list-disc text-primary-800">
+            <p>
+              <span class="font-semibold text-primary-800">Sostenibilidad:</span
+              >
+              Comprometidos con el medio ambiente, trabajamos para que cada paso
+              de nuestro proceso sea eco-amigable, desde la obtención de materias
+              primas hasta el empaque final.
+            </p>
+          </li>
+          <li class="list-disc text-primary-800">
+            <p>
+              <span class="font-semibold text-primary-800">Calidad:</span>
+              La excelencia es nuestro estándar. Cada producto Green Glow es el resultado
+              de rigurosos controles de calidad y la pasión por el bienestar de nuestros
+              clientes.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="w-full h-fit py-8 flex flex-col items-center justify-start gap-8"
+    >
+      <Image
+        src={about3}
+        alt="Sobre nosotros"
+        class="w-10/12 h-[164px] tablet:h-[341px] desktop:h-[606px] rounded-2xl object-cover"
+      />
+    </div>
+
+    <!-- PROMESA -->
+
+    <div
+      class="w-full h-fit desktop:h-[768px] flex flex-col desktop:flex-row justify-start desktop:justify-center bg-primary-100 items-center gap-8 p-12 mb-14"
+    >
+      <h4
+        class="font-commissioner text-primary-900 font-semibold text-sm tablet:text-lg desktop:text-xl"
+      >
+        NUESTRA PROMESA
+      </h4>
+      <h3
+        class="font-commissioner text-primary-600 font-semibold text-xl tablet:text-3xl desktop:text-4xl text-center tablet:text-left w-full tablet:w-[520px] h-fit"
+      >
+        Diseñar productos naturales, libres de tóxicos y compuestos dañinos,
+        para armonizar la belleza con la salud y el respeto por la naturaleza.
+      </h3>
+      <p
+        class="font-fredoka w-full tablet:w-[520px] h-fit text-primary-900 font-light text-xs tablet:text-base desktop:text-xl text-balance"
+      >
+        Nos comprometemos a innovar constantemente, manteniendo altos estándares
+        de calidad y sostenibilidad, para que tú y tus seres queridos puedas
+        vivir y prosperar en un mundo más consciente y cuidadoso.
+      </p>
+    </div>
+  </main>
+</Layout>

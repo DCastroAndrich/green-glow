@@ -1,0 +1,25 @@
+---
+import ProductCard from '@/components/islands/ProductCard';
+import { products } from '@/data/products-data';
+
+const bestSellers = products.filter((product) => product.isBestSeller);
+---
+
+<article
+  class="flex flex-col items-start justify-between gap-32 py-14 w-full h-fit"
+>
+  <h3
+    class="font-commissioner text-primary-500 font-bold text-3xl pl-10 tablet:text-4xl"
+  >
+    Los más vendidos
+  </h3>
+  <div
+    class="flex flex-col items-center justify-center w-full h-fit gap-9 tablet:gap-6 tablet:p-4 tablet:flex-row"
+  >
+    {
+      bestSellers.map((product) => (
+        <ProductCard product={product} client:visible />
+      ))
+    }
+  </div>
+</article>

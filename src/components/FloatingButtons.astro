@@ -1,0 +1,196 @@
+---
+const whatsappOptions = [
+  {
+    label: 'Información',
+    number: '5492215676592',
+    message: '¡Hola! Quiero más información sobre los productos.',
+  },
+  {
+    label: 'Pedidos',
+    number: '542216828979',
+    message: '¡Hola! Quiero hacer un pedido.',
+  },
+];
+const { pathname } = Astro.url;
+const isHome = pathname === '/';
+
+/* const whatsappNumber = '5492215676592';
+const whatsappMessage = encodeURIComponent(
+  '¡Hola! Quiero más información sobre los productos.'
+);
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; */
+---
+
+<div class="fixed bottom-6 right-6 flex flex-col items-end gap-4 z-50">
+  <!-- Scroll to Top Button -->
+  <button
+    id="scrollToTopBtn"
+    aria-label="Volver arriba"
+    class="bg-gray-800 hover:bg-gray-700 rounded-full shadow-lg p-1 mobile:p-3 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-4 h-4 text-white"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- WhatsApp Button with Popover -->
+  <div class="relative">
+    <button
+      id="whatsAppBtn"
+      aria-label="Contactar por WhatsApp"
+      class="bg-green-500 hover:bg-green-600 rounded-full shadow-lg p-2 mobile:p-4 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
+      type="button"
+      onclick="toggleWaMenu(event)"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 mobile:w-7 mobile:h-7 text-white"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M20.52 3.48A12.07 12.07 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.19 1.6 6.01L0 24l6.18-1.62A12.07 12.07 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.44l-.37-.22-3.67.96.98-3.58-.24-.37A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.6c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-.98 2.43.02 1.43 1.03 2.81 1.18 3.01.15.2 2.03 3.1 4.93 4.23.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"
+        ></path>
+      </svg>
+    </button>
+    <!-- Poporver -->
+    <div
+      id="waMenu"
+      class="hidden absolute right-full mr-4 bottom-1/2 translate-y-1/2 flex-col bg-transparent backdrop-blur-md rounded-lg shadow-lg p-2 min-w-[180px] border border-primary-400"
+      role="menu"
+      aria-label="Elegir tipo de contacto"
+    >
+      {
+        whatsappOptions.map((opt) => (
+          <a
+            href={`https://wa.me/${opt.number}?text=${encodeURIComponent(opt.message)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block px-4 py-2 text-primary-500 hover:bg-primary-900 rounded transition"
+            role="menuitem"
+            tabindex="0"
+          >
+            {opt.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <!-- <a
+    id="whatsAppBtn"
+    href={whatsappUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    class="bg-green-500 hover:bg-green-600 rounded-full shadow-lg p-2 mobile:p-4 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 mobile:w-7 mobile:h-7 text-white"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path
+        d="M20.52 3.48A12.07 12.07 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.19 1.6 6.01L0 24l6.18-1.62A12.07 12.07 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.44l-.37-.22-3.67.96.98-3.58-.24-.37A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.6c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-.98 2.43.02 1.43 1.03 2.81 1.18 3.01.15.2 2.03 3.1 4.93 4.23.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"
+      ></path>
+    </svg>
+  </a> -->
+</div>
+
+<script is='client="load"'>
+  // Mostrar/ocultar el popover
+  function toggleWaMenu(event) {
+    event.stopPropagation();
+    const menu = document.getElementById('waMenu');
+    menu?.classList.toggle('hidden');
+  }
+  //cerrar el popover
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('waMenu');
+    const btn = document.getElementById('whatsAppBtn');
+    if (
+      menu &&
+      !menu.classList.contains('hidden') &&
+      btn &&
+      !(btn === e.target || btn.contains(e.target)) &&
+      !(menu === e.target || menu.contains(e.target))
+    ) {
+      menu.classList.add('hidden');
+    }
+  });
+
+  if (typeof window !== 'undefined') {
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    const waBtn = document.getElementById('whatsAppBtn');
+    const hero = document.getElementById('hero-section');
+    const show = () => {
+      scrollBtn?.classList.add(
+        'opacity-100',
+        'translate-y-0',
+        'pointer-events-auto'
+      );
+      scrollBtn?.classList.remove(
+        'opacity-0',
+        'translate-y-4',
+        'pointer-events-none'
+      );
+      waBtn?.classList.add(
+        'opacity-100',
+        'translate-y-0',
+        'pointer-events-auto'
+      );
+      waBtn?.classList.remove(
+        'opacity-0',
+        'translate-y-4',
+        'pointer-events-none'
+      );
+    };
+    const hide = () => {
+      scrollBtn?.classList.remove(
+        'opacity-100',
+        'translate-y-0',
+        'pointer-events-auto'
+      );
+      scrollBtn?.classList.add(
+        'opacity-0',
+        'translate-y-4',
+        'pointer-events-none'
+      );
+      waBtn?.classList.remove(
+        'opacity-100',
+        'translate-y-0',
+        'pointer-events-auto'
+      );
+      waBtn?.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+    };
+    if (hero && scrollBtn && waBtn) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            show();
+          } else {
+            hide();
+          }
+        },
+        { threshold: 0 }
+      );
+      observer.observe(hero);
+      hide();
+    } else if (scrollBtn && waBtn) {
+      show();
+    }
+  }
+</script>

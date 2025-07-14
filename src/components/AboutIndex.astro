@@ -1,0 +1,59 @@
+---
+import { CaretCircleRight } from '@phosphor-icons/react';
+import { ButtonLink } from '@/components/custom/ButtonLink';
+---
+
+<section
+  class="flex flex-col items-center justify-center gap-4 laptop:flex-row desktop:gap-11 2xl:gap-10 desktop:px-5 px-10 py-10 h-fit desktop:h-[640px] 2xl:h-[800px] w-full mobile:w-4/5"
+>
+  <!-- left -->
+
+  <div
+    class="flex flex-col h-fit laptop:h-6/7 w-full laptop:w-1/2 justify-center tablet:justify-start items-center tablet:items-start py-8"
+  >
+    <div
+      class="flex flex-col gap-20 py-14 w-full h-fit laptop:h-full 2xl:w-[629px] 2xl:h-[637px]"
+    >
+      <h2
+        class="text-primary-500 text-3xl text-center tablet:text-left tablet:text-5xl font-bold font-commissioner"
+      >
+        ¡Descubre la belleza natural con <span
+          class="text-3xl tablet:text-5xl font-black text-primary-300"
+          >GREEN GLOW</span
+        >
+      </h2>
+      <p
+        class="text-base text-balance w-full text-center tablet:text-left tablet:text-xl font-semibold font-fredoka text-primary-300"
+      >
+        Te invitamos a experimentar la belleza en su forma mas pura, natural,
+        efectiva y consciente. Únete a nosotros en este viaje hacia un futuro
+        más verde y radiante.
+      </p>
+    </div>
+    <div
+      class="flex mobile:flow-row items-center mobile:justify-center laptop:justify-start gap-4 p-4 w-fit h-1/8"
+    >
+      <ButtonLink
+        href="/about"
+        variant="default"
+        className="bg-primary-800 font-fredoka mobile:font-medium text-xs mobile:text-lg flex flex-row justify-center rounded-3xl text-primary-300"
+        client:load
+      >
+        Conocenos <CaretCircleRight />
+      </ButtonLink>
+      <ButtonLink
+        href="/productos"
+        variant="outline"
+        className="bg-transparent border-primary-800 border-2 font-fredoka mobile:font-medium text-xs mobile:text-lg flex flex-row justify-center rounded-3xl text-primary-300"
+        client:load
+      >
+        Ver productos
+      </ButtonLink>
+    </div>
+  </div>
+  <!-- derecha -->
+  <div
+    class="h-[400px] tablet:h-[600px] desktop:h-full w-full laptop:w-1/2 bg-[url(../src/assets/about-intro.jpg)] bg-cover bg-center rounded-3xl"
+  >
+  </div>
+</section>

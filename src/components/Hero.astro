@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import logo from '@/assets/Logo.png';
+import heroLetters from '@/assets/heroLetters.png';
+---
+
+<header
+  id="hero-section"
+  class="flex flex-col items-center justify-center h-screen w-full bg-[url(../src/assets/bg-hero.jpg)] bg-cover bg-center bg-no-repeat"
+>
+  <div class="absolute bg-black/50 h-screen w-full"></div>
+  <div
+    class="flex flex-col mobile:flex-row gap-0 items-center justify-center h-fit w-fit"
+  >
+    <Image
+      src={logo}
+      alt={'green glow logo'}
+      width={550}
+      height={550}
+      class="drop-shadow-xl w-3/5 mobile:w-1/2 h-auto"
+    />
+    <div
+      class="flex flex-col items-center mobile:items-start justify-center w-fit h-fit"
+    >
+      <Image
+        src={heroLetters}
+        alt={'green glow'}
+        class={'drop-shadow-xl w-4/5'}
+      />
+      <h1
+        class="text-primary-500 font-commissioner font-semibold text-lg mobile:text-3xl z-10 relative"
+      >
+        FITOCOSMETICA
+      </h1>
+    </div>
+  </div>
+</header>
