@@ -1,11 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import logo from '@/assets/Logo.png';
-import heroLetters from '@/assets/heroLetters.png';
+import logo from '@/assets/Logo.webp';
+import heroLetters from '@/assets/heroLetters.webp';
 import bgHero from '@/assets/bg-hero.webp';
 ---
 
-<header
+<!-- <header
   id="hero-section"
   class={`flex h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat`}
   style={`background-image: url('${bgHero.src}')`}
@@ -28,6 +28,57 @@ import bgHero from '@/assets/bg-hero.webp';
         src={heroLetters}
         alt={'green glow'}
         class={'w-4/5 drop-shadow-xl'}
+      />
+      <h1
+        class="relative z-10 font-commissioner text-lg font-semibold text-primary-500 mobile:text-3xl"
+      >
+        FITOCOSMETICA
+      </h1>
+    </div>
+  </div>
+</header> -->
+<header
+  id="hero-section"
+  class="relative flex h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+>
+  <!-- Fondo optimizado como imagen decorativa -->
+  <Image
+    src={bgHero}
+    alt=""
+    aria-hidden="true"
+    class="absolute left-0 top-0 -z-10 size-full object-cover"
+    width={1920}
+    height={1080}
+    format="webp"
+    sizes="100vw"
+    priority
+  />
+  <div class="absolute size-full bg-black/50"></div>
+  <div
+    class="flex size-fit flex-col items-center justify-center gap-0 mobile:flex-row"
+  >
+    <Image
+      src={logo}
+      alt="green glow logo"
+      width={550}
+      height={550}
+      class="h-auto w-3/5 drop-shadow-xl mobile:w-1/2"
+      format="webp"
+      sizes="(max-width: 1920px) 50vw, 33vw"
+      priority
+    />
+    <div
+      class="flex size-fit flex-col items-center justify-center mobile:items-start"
+    >
+      <Image
+        src={heroLetters}
+        alt="green glow"
+        width={1024}
+        height={1024}
+        class="w-4/5 drop-shadow-xl"
+        format="webp"
+        sizes="(max-width: 1920px) 80vw, 40vw"
+        priority
       />
       <h1
         class="relative z-10 font-commissioner text-lg font-semibold text-primary-500 mobile:text-3xl"

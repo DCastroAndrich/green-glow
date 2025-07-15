@@ -22,9 +22,18 @@ const ProductCard = ({ product, selectedCategory }: ProductCardProps) => {
   return (
     <Card className="group relative flex h-[357px] w-[320px] flex-col items-start justify-center gap-2 overflow-hidden rounded-[20px] border-2 border-primary-300 bg-transparent pb-2.5 tablet:h-[267px] tablet:w-[240px] laptop:h-[551px] laptop:w-[406px] laptop:items-center laptop:gap-2.5 laptop:border-none laptop:p-0">
       <CardContent className="relative h-4/5 w-full overflow-hidden p-0 tablet:h-3/5 laptop:h-[477px]">
+        {/* <img
+          src={product.imageUrl.src || '/placeholder.svg'}
+          alt={product.name}
+          className="size-full object-cover laptop:rounded-b-xl"
+        /> */}
         <img
           src={product.imageUrl.src || '/placeholder.svg'}
           alt={product.name}
+          width={product.imageUrl.width || 400}
+          height={product.imageUrl.height || 400}
+          loading="lazy"
+          decoding="async"
           className="size-full object-cover laptop:rounded-b-xl"
         />
         <div className="absolute inset-0 flex cursor-pointer items-center justify-center rounded-[20px] rounded-b-lg bg-black/60 opacity-0 transition-opacity group-hover:opacity-100 laptop:group-hover:backdrop-blur laptop:group-hover:backdrop-grayscale">

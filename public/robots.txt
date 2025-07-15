@@ -1,0 +1,11 @@
+# Permite el acceso a todo el sitio
+User-agent: *
+Allow: /
+
+
+# Permite el acceso a los archivos estáticos
+Allow: /public/
+Allow: /assets/
+
+# Sitemap (ajusta la URL si tu sitemap está en otra ruta)
+Sitemap: https://www.greenglow.com.ar/sitemap.xml

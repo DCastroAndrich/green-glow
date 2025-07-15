@@ -12,12 +12,12 @@ import {
   JarLabel,
 } from '@phosphor-icons/react';
 
-import products from '@/assets/prod-Todos-los-productos.jpg';
-import aceites from '@/assets/prod-Aceite-anti-stress.jpg';
-import cremas from '@/assets/prod-Crema-descontracturante.jpg';
-import cosmeticos from '@/assets/prod-Serum-facial.jpg';
-import geles from '@/assets/prod-Gel-de-limpieza.jpg';
-import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
+import products from '@/assets/prod-Todos-los-productos.webp';
+import aceites from '@/assets/prod-Aceite-anti-stress.webp';
+import cremas from '@/assets/prod-Crema-descontracturante.webp';
+import cosmeticos from '@/assets/prod-Serum-facial.webp';
+import geles from '@/assets/prod-Gel-de-limpieza.webp';
+import unguentos from '@/assets/prod-Unguento-medicinales.webp';
 ---
 
 <article>
@@ -66,7 +66,14 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
         <div
           class="h-[190px] w-full overflow-hidden rounded-b-xl tablet:h-[170px] tablet:rounded-none laptop:h-[325px] desktop:h-[473px]"
         >
-          <Image src={products} alt={'todos los productos'} />
+          <Image
+            src={products}
+            alt={'todos los productos'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+          />
         </div>
       </div>
 
@@ -81,8 +88,11 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
           <Image
             src={aceites}
             alt={'aceites'}
-            layout="responsive"
-            class={'size-full scale-150'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+            class={'size-full scale-150 object-cover'}
           />
         </div>
         <div
@@ -127,8 +137,11 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
           <Image
             src={cosmeticos}
             alt={'cosméticos'}
-            layout="responsive"
-            class={'size-full rounded-b-xl mobile:rounded-r-3xl mobile:rounded-bl-none'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+            class={'size-full rounded-b-xl object-cover mobile:rounded-r-3xl mobile:rounded-bl-none'}
           />
         </div>
       </div>
@@ -142,8 +155,11 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
           <Image
             src={cremas}
             alt={'cremas'}
-            layout="responsive"
-            class={'ml-10 size-full scale-150'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+            class={'ml-10 size-full scale-150 object-cover'}
           />
         </div>
         <div
@@ -168,8 +184,11 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
           <Image
             src={geles}
             alt={'geles'}
-            layout="responsive"
-            class={'size-full scale-125'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+            class={'size-full scale-125 object-cover'}
           />
         </div>
         <div
@@ -194,8 +213,11 @@ import unguentos from '@/assets/prod-Unguento-medicinales.jpg';
           <Image
             src={unguentos}
             alt={'ungüentos'}
-            layout="responsive"
-            class={'size-full'}
+            width={800}
+            height={800}
+            format="webp"
+            sizes="(max-width: 1024px) 100vw, 20vw"
+            class={'size-full object-cover'}
           />
         </div>
         <div
