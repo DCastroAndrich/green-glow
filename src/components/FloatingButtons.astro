@@ -15,26 +15,20 @@ const whatsappOptions = [
   },
 ];
 const { pathname } = Astro.url;
-const isHome = pathname === '/';
-
-/* const whatsappNumber = '5492215676592';
-const whatsappMessage = encodeURIComponent(
-  '¡Hola! Quiero más información sobre los productos.'
-);
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; */
+//const isHome = pathname === '/';
 ---
 
-<div class="fixed bottom-6 right-6 flex flex-col items-end gap-4 z-50">
+<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
   <!-- Scroll to Top Button -->
   <button
     id="scrollToTopBtn"
     aria-label="Volver arriba"
-    class="bg-gray-800 hover:bg-gray-700 rounded-full shadow-lg p-1 mobile:p-3 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
+    class="pointer-events-none flex translate-y-4 items-center justify-center rounded-full bg-gray-800 p-1 opacity-0 shadow-lg transition-all duration-500 ease-out hover:bg-gray-700 mobile:p-3"
     onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="w-4 h-4 text-white"
+      class="size-4 text-white"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -52,13 +46,13 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; *
     <button
       id="whatsAppBtn"
       aria-label="Contactar por WhatsApp"
-      class="bg-green-500 hover:bg-green-600 rounded-full shadow-lg p-2 mobile:p-4 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
+      class="pointer-events-none flex translate-y-4 items-center justify-center rounded-full bg-green-500 p-2 opacity-0 shadow-lg transition-all duration-500 ease-out hover:bg-green-600 mobile:p-4"
       type="button"
       onclick="toggleWaMenu(event)"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-5 h-5 mobile:w-7 mobile:h-7 text-white"
+        class="size-5 text-white mobile:size-7"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
@@ -70,7 +64,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; *
     <!-- Poporver -->
     <div
       id="waMenu"
-      class="hidden absolute right-full mr-4 bottom-1/2 translate-y-1/2 flex-col bg-primary-900/50 backdrop-blur-md rounded-lg shadow-lg p-2 min-w-[180px] border border-primary-400"
+      class="absolute bottom-1/2 right-full mr-4 hidden min-w-[180px] translate-y-1/2 flex-col rounded-lg border border-primary-400 bg-primary-900/50 p-2 shadow-lg backdrop-blur-md"
       role="menu"
       aria-label="Elegir tipo de contacto"
     >
@@ -80,38 +74,17 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`; *
             href={`https://wa.me/${opt.number}?text=${encodeURIComponent(opt.message)}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="block px-4 py-2 text-primary-500 hover:bg-primary-900 rounded transition"
+            class="block rounded px-4 py-2 text-primary-500 transition hover:bg-primary-900"
             role="menuitem"
             tabindex="0"
           >
-            {<opt.icon className="inline mr-2" size={20} />}
+            {<opt.icon className="mr-2 inline" size={20} />}
             {opt.label}
           </a>
         ))
       }
     </div>
   </div>
-
-  <!-- WhatsApp Button -->
-  <!-- <a
-    id="whatsAppBtn"
-    href={whatsappUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-    class="bg-green-500 hover:bg-green-600 rounded-full shadow-lg p-2 mobile:p-4 flex items-center justify-center transition-all duration-500 ease-out opacity-0 translate-y-4 pointer-events-none"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-5 h-5 mobile:w-7 mobile:h-7 text-white"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path
-        d="M20.52 3.48A12.07 12.07 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.19 1.6 6.01L0 24l6.18-1.62A12.07 12.07 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.44l-.37-.22-3.67.96.98-3.58-.24-.37A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.6c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-.98 2.43.02 1.43 1.03 2.81 1.18 3.01.15.2 2.03 3.1 4.93 4.23.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"
-      ></path>
-    </svg>
-  </a> -->
 </div>
 
 <script is='client="load"'>

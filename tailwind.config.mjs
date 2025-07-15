@@ -1,7 +1,11 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: [
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './public/**/*.html',
+  ],
   theme: {
     extend: {
       borderRadius: {
@@ -84,5 +88,11 @@ export default {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('tailwind-scrollbar')],
+  plugins: [
+    require('tailwindcss-animate'),
+    require('tailwind-scrollbar'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };

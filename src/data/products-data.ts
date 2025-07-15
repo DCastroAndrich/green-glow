@@ -1,3 +1,33 @@
+import aceiteAntistress from '@/assets/prod-Aceite-anti-stress.jpg';
+import aceiteMasajes from '@/assets/prod-Aceite-de-Cannabis-y-Arnica.jpg';
+import aceiteDemaquillante from '@/assets/prod-Aceite-desmaquillante.jpg';
+import aceiteSublingual from '@/assets/prod-Aceite-sublingual-de-cannabis.jpg';
+import balsamoLabial from '@/assets/prod-Balsamo-labial.jpg';
+import bodySplash from '@/assets/prod-Bodysplash.jpg';
+import brumaFacial from '@/assets/prod-Bruma-facial.jpg';
+import cremaAcida from '@/assets/prod-Crema-acida.jpg';
+import cremaCelulitis from '@/assets/prod-Crema-anti-celulitis.jpg';
+import cremaDescontracturante from '@/assets/prod-Crema-descontracturante.jpg';
+import cremaFacial from '@/assets/prod-Crema-Facial.jpg';
+import cremaMedicinal from '@/assets/prod-Crema-medicinal.jpg';
+import cremaManos from '@/assets/prod-Crema-para-manos-II.jpg';
+import cremaMasaje from '@/assets/prod-Crema-para-masajes-cannabis-y-arnica.jpg';
+import emulsionCorporal from '@/assets/prod-Emulsion-Corporal.jpg';
+import gelCriogeno from '@/assets/prod-Gel-criogeno.jpg';
+import gelLimpieza from '@/assets/prod-Gel-de-limpieza.jpg';
+import gelForte from '@/assets/prod-Gel-Forte.jpg';
+import gelPeinar from '@/assets/prod-Gel-para-peinar.jpg';
+import jabonLiquido from '@/assets/prod-Jabon-liquido.jpg';
+import lecheLimpieza from '@/assets/prod-Leche-de-limpieza.jpg';
+import oroLiquido from '@/assets/prod-Oro-liquido.jpg';
+import pomadaRegenerador from '@/assets/prod-Pomada-Regeneradora.jpg';
+import protectorSolar from '@/assets/prod-Protector-solar.jpg';
+import serumFacial from '@/assets/prod-Serum-facial.jpg';
+import tintura from '@/assets/prod-Tintura-de-cannabis-y-arnica.jpg';
+import tonicoFacial from '@/assets/prod-Tonico-facial.jpg';
+import unguentoMedicinal from '@/assets/prod-Unguento-medicinales.jpg';
+import unguentoVick from '@/assets/prod-Unguento-VICK.jpg';
+
 type Categories = 'Aceites' | 'Cosméticos' | 'Cremas' | 'Geles' | 'Unguentos';
 
 export interface Product {
@@ -10,7 +40,7 @@ export interface Product {
   howToUse: string[];
   precautions: string[];
   presentations: { size: string; price: number }[];
-  imageUrl: string;
+  imageUrl: ImageMetadata;
   isBestSeller: boolean;
 }
 export interface Variant {
@@ -39,7 +69,7 @@ export const products: Product[] = [
       'En caso de embarazo, lactancia o niños menores de 6 años, consultar con un profesional.',
       'Mantener en lugar fresco, seco y fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Aceite-anti-stress.jpg',
+    imageUrl: aceiteAntistress,
     isBestSeller: false,
   },
   {
@@ -82,7 +112,7 @@ export const products: Product[] = [
       'En caso de embarazo, lactancia o condiciones médicas, consultar con un profesional.',
       'Conservar en lugar fresco y seco, fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Aceite-de-Cannabis-y-Arnica.jpg',
+    imageUrl: aceiteMasajes,
     isBestSeller: false,
   },
   {
@@ -126,7 +156,7 @@ export const products: Product[] = [
       'No utilizar sobre piel lesionada o con afecciones activas sin consultar con un profesional.',
       'Conservar en lugar fresco, seco y fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Aceite-desmaquillante.jpg',
+    imageUrl: aceiteDemaquillante,
     isBestSeller: false,
   },
   {
@@ -151,7 +181,7 @@ export const products: Product[] = [
       'No conducir ni operar maquinaria pesada tras la ingesta hasta conocer su efecto.',
       'Conservar en lugar fresco, seco, al resguardo de la luz y fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Aceite-sublingual-de-cannabis.jpg',
+    imageUrl: aceiteSublingual,
     isBestSeller: false,
   },
   {
@@ -189,7 +219,7 @@ export const products: Product[] = [
       'Evitar el contacto con ojos o mucosas sensibles.',
       'No utilizar si presenta alergia a alguno de los componentes (en especial, derivados de la abeja).',
     ],
-    imageUrl: '../../src/assets/prod-Balsamo-labial.jpg',
+    imageUrl: balsamoLabial,
     isBestSeller: false,
   },
   {
@@ -231,7 +261,7 @@ export const products: Product[] = [
       'No apto para personas con sensibilidad a perfumes o esencias.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Bodysplash.jpg',
+    imageUrl: bodySplash,
     isBestSeller: true,
   },
   {
@@ -284,7 +314,7 @@ export const products: Product[] = [
       'Mantener en lugar fresco y seco, protegido de la luz solar directa.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Bruma-facial.jpg',
+    imageUrl: brumaFacial,
     isBestSeller: false,
   },
   {
@@ -308,7 +338,7 @@ export const products: Product[] = [
       'Mantener en lugar fresco, seco y protegido de la luz directa.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-acida.jpg',
+    imageUrl: cremaAcida,
     isBestSeller: false,
   },
   {
@@ -330,7 +360,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y seco, protegido de la luz solar directa.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-anti-celulitis.jpg',
+    imageUrl: cremaCelulitis,
     isBestSeller: false,
   },
   {
@@ -352,7 +382,7 @@ export const products: Product[] = [
       'Conservar en un lugar fresco y protegido de la luz directa.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-descontracturante.jpg',
+    imageUrl: cremaDescontracturante,
     isBestSeller: false,
   },
   {
@@ -413,7 +443,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y seco, lejos del sol directo.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-Facial.jpg',
+    imageUrl: cremaFacial,
     isBestSeller: false,
   },
   {
@@ -457,7 +487,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de los niños.',
       'Conservar en lugar fresco, protegido de la luz directa.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-medicinal.jpg',
+    imageUrl: cremaMedicinal,
     isBestSeller: false,
   },
   {
@@ -501,7 +531,7 @@ export const products: Product[] = [
       'No utilizar sobre heridas abiertas.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-para-manos-II.jpg',
+    imageUrl: cremaManos,
     isBestSeller: true,
   },
 
@@ -522,7 +552,7 @@ export const products: Product[] = [
       'Evitar contacto con ojos y mucosas.',
       'Conservar en lugar fresco y protegido de la luz.',
     ],
-    imageUrl: '../../src/assets/prod-Emulsion-Corporal.jpg',
+    imageUrl: emulsionCorporal,
     isBestSeller: false,
   },
   {
@@ -545,7 +575,7 @@ export const products: Product[] = [
       'Conservar en un lugar fresco y seco, alejado de la luz solar directa.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Crema-para-masajes-cannabis-y-arnica.jpg',
+    imageUrl: cremaMasaje,
     isBestSeller: false,
   },
   {
@@ -568,7 +598,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de los niños.',
       'Almacenar en lugar fresco y protegido de la luz.',
     ],
-    imageUrl: '../../src/assets/prod-Gel-criogeno.jpg',
+    imageUrl: gelCriogeno,
     isBestSeller: false,
   },
   {
@@ -591,7 +621,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco, seco y al resguardo de la luz solar directa.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Gel-de-limpieza.jpg',
+    imageUrl: gelLimpieza,
     isBestSeller: false,
   },
   {
@@ -613,7 +643,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
       'Conservar en un lugar fresco y al resguardo de la luz solar directa.',
     ],
-    imageUrl: '../../src/assets/prod-Gel-Forte.jpg',
+    imageUrl: gelForte,
     isBestSeller: false,
   },
   {
@@ -635,7 +665,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y seco, protegido de la luz directa.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Gel-para-peinar.jpg',
+    imageUrl: gelPeinar,
     isBestSeller: false,
   },
   {
@@ -657,7 +687,7 @@ export const products: Product[] = [
       'Almacenar en un lugar fresco y seco, alejado de la luz solar.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Jabon-liquido.jpg',
+    imageUrl: jabonLiquido,
     isBestSeller: false,
   },
   {
@@ -682,7 +712,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco, seco y alejado de la luz directa del sol.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Leche-de-limpieza.jpg',
+    imageUrl: lecheLimpieza,
     isBestSeller: false,
   },
   {
@@ -707,7 +737,7 @@ export const products: Product[] = [
       'Conservar en un lugar fresco, protegido de la luz y el calor.',
       'Mantener fuera del alcance de los niños.',
     ],
-    imageUrl: '../../src/assets/prod-Oro-liquido.jpg',
+    imageUrl: oroLiquido,
     isBestSeller: false,
   },
   {
@@ -731,7 +761,7 @@ export const products: Product[] = [
       'Evitar el contacto con los ojos.',
       'Conservar en lugar fresco y seco, alejado de la luz directa.',
     ],
-    imageUrl: '../../src/assets/prod-Pomada-Regeneradora.jpg',
+    imageUrl: pomadaRegenerador,
     isBestSeller: false,
   },
   {
@@ -753,7 +783,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
       'Conservar en lugar fresco y oscuro.',
     ],
-    imageUrl: '../../src/assets/prod-Protector-solar.jpg',
+    imageUrl: protectorSolar,
     isBestSeller: false,
   },
   {
@@ -775,7 +805,7 @@ export const products: Product[] = [
       'Durante el uso de retinol, se recomienda protección solar diaria.',
       'Almacenar en lugar fresco, seco y oscuro.',
     ],
-    imageUrl: '../../src/assets/prod-Serum-facial.jpg',
+    imageUrl: serumFacial,
     isBestSeller: true,
   },
   {
@@ -816,7 +846,7 @@ export const products: Product[] = [
       'No aplicar sobre heridas abiertas.',
       'Conservar en lugar fresco y protegido de la luz solar directa.',
     ],
-    imageUrl: '../../src/assets/prod-Tintura-de-cannabis-y-arnica.jpg',
+    imageUrl: tintura,
     isBestSeller: false,
   },
   {
@@ -856,7 +886,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco, alejado de la luz directa.',
       'Agitar antes de usar para activar los extractos naturales.',
     ],
-    imageUrl: '../../src/assets/prod-Tonico-facial.jpg',
+    imageUrl: tonicoFacial,
     isBestSeller: false,
   },
   {
@@ -900,7 +930,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y seco, alejado de la luz directa.',
       'Mantener fuera del alcance de niños.',
     ],
-    imageUrl: '../../src/assets/prod-Unguento-medicinales.jpg',
+    imageUrl: unguentoMedicinal,
     isBestSeller: false,
   },
   {
@@ -923,7 +953,7 @@ export const products: Product[] = [
       'Evitar exposición al sol tras su uso.',
       'Almacenar en lugar fresco y protegido de la luz.',
     ],
-    imageUrl: '../../src/assets/prod-Unguento-VICK.jpg',
+    imageUrl: unguentoVick,
     isBestSeller: false,
   },
 ];

@@ -13,40 +13,43 @@ interface Props {
 const { product } = Astro.props;
 
 // Valores por defecto si no se pasa un producto
-const productName = product?.name || "Bálsamo de cera de abejas, cannabis y lavanda";
-const productDescription = product?.description || "Nuestro bálsamo de cera de abeja, cannabis y lavanda, una poderosa combinación de ingredientes naturales diseñada para nutrir, calmar y revitalizar tu piel. Descubre los beneficios y propiedades de esta fusión única que te llevará a un estado de bienestar y relajación.";
+const productName =
+  product?.name || 'Bálsamo de cera de abejas, cannabis y lavanda';
+const productDescription =
+  product?.description ||
+  'Nuestro bálsamo de cera de abeja, cannabis y lavanda, una poderosa combinación de ingredientes naturales diseñada para nutrir, calmar y revitalizar tu piel. Descubre los beneficios y propiedades de esta fusión única que te llevará a un estado de bienestar y relajación.';
 const productPrice = product?.price || 111;
 ---
 
 <section
-  class="flex flex-col w-full h-fit justify-start items-center gap-7 p-4"
+  class="flex h-fit w-full flex-col items-center justify-start gap-7 p-4"
 >
   <!-- titulo -->
   <div
-    class="flex flex-col w-full tablet:w-11/12 h-fit items-start justify-center gap-8"
+    class="flex h-fit w-full flex-col items-start justify-center gap-8 tablet:w-11/12"
   >
     <h2
-      class="w-full h-fit text-balance tablet:text-wrap font-commissioner font-semibold text-2xl tablet:text-4xl laptop:text-5xl text-primary-400 text-center"
+      class="h-fit w-full text-balance text-center font-commissioner text-2xl font-semibold text-primary-400 tablet:text-wrap tablet:text-4xl laptop:text-5xl"
     >
       {productName}
     </h2>
     <!-- descripcion -->
     <p
-      class="w-full h-fit text-pretty tablet:pl-4 font-fredoka font-light text-xs tablet:text-xl laptop:text-2xl text-primary-300"
+      class="h-fit w-full text-pretty font-fredoka text-xs font-light text-primary-300 tablet:pl-4 tablet:text-xl laptop:text-2xl"
     >
       {productDescription}
     </p>
     <!-- precio -->
     <p
-      class="w-full h-fit text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4"
+      class="h-fit w-full text-balance text-center font-fredoka text-3xl font-semibold text-primary-400 tablet:pl-4 tablet:text-left tablet:text-5xl"
     >
       $ {productPrice}
     </p>
   </div>
-  <div class="w-11/12 h-fit">
+  <div class="h-fit w-11/12">
     <HowToBuyDialog client:visible />
   </div>
-  <div class="w-full tablet:w-11/12 bg-transparent">
+  <div class="w-full bg-transparent tablet:w-11/12">
     <ProductDetailTabs client:visible product={product} />
   </div>
 </section>

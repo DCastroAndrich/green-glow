@@ -1,10 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import '@/styles/globals.css';
-import { Image } from 'astro:assets';
-import lavanda from '@/assets/lavanda.jpg';
-import cera from '@/assets/cera.jpg';
-import canna from '@/assets/canna.jpg';
 import HowToBuyDialog from '@/components/islands/HowToBuyDialog';
 import ProductDetailTabs from '@/components/islands/ProductDetailTabs';
 import { products } from '../../../data/products-data.ts';
@@ -39,7 +35,7 @@ const displayCategoryName = categoryNames[categoria] || categoria;
 
 <Layout title={`Green Glow - ${product.name}`}>
   <main
-    class="flex flex-col justify-start w-full items-center h-fit min-h-screen gap-3"
+    class="flex h-fit min-h-screen w-full flex-col items-center justify-start gap-3"
   >
     <Breadcrumbs
       productName={product.name}
@@ -48,72 +44,52 @@ const displayCategoryName = categoryNames[categoria] || categoria;
     />
 
     <div
-      class="flex flex-col desktop:flex-row justify-start w-full items-center desktop:items-start h-full min-h-screen gap-3"
+      class="flex size-full min-h-screen flex-col items-center justify-start gap-3 desktop:flex-row desktop:items-start"
     >
       <div
-        class="w-11/12 h-full laptop:h-[1200px] mt-4 desktop:ml-6 items-center"
+        class="mt-4 h-full w-11/12 items-center laptop:h-[1200px] desktop:ml-6"
       >
         <img
           id="product-image"
-          src={product.imageUrl}
+          src={product.imageUrl.src}
           alt={product.name}
-          class={'w-full h-full object-cover rounded-3xl'}
+          class={'size-full rounded-3xl object-cover'}
         />
-        <!--     <Image
-          src={lavanda}
-          alt={'producto'}
-          class={'col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
-        />
-        <Image
-          src={cera}
-          alt={'producto'}
-          class={' col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
-        />
-        <Image
-          src={canna}
-          alt={'producto'}
-          class={' col-span-1 row-span-1 w-full h-full desktop:h-3/4 object-cover rounded-xl'}
-        /> -->
       </div>
 
       <section
-        class="flex flex-col w-full h-fit justify-start items-center gap-7 p-4"
+        class="flex h-fit w-full flex-col items-center justify-start gap-7 p-4"
       >
         <!-- titulo -->
         <div
-          class="flex flex-col w-full tablet:w-11/12 h-fit items-start justify-center gap-8"
+          class="flex h-fit w-full flex-col items-start justify-center gap-8 tablet:w-11/12"
         >
           <h2
-            class="w-full h-fit text-balance tablet:text-wrap font-commissioner font-semibold text-2xl tablet:text-4xl laptop:text-5xl text-primary-400 text-center"
+            class="h-fit w-full text-balance text-center font-commissioner text-2xl font-semibold text-primary-400 tablet:text-wrap tablet:text-4xl laptop:text-5xl"
           >
             {product.name}
           </h2>
           <h4
-            class="w-full h-fit text-balance tablet:text-wrap font-commissioner font-semibold text-xl tablet:text-2xl laptop:text-3xl text-primary-400 text-center"
+            class="h-fit w-full text-balance text-center font-commissioner text-xl font-semibold text-primary-400 tablet:text-wrap tablet:text-2xl laptop:text-3xl"
           >
             {product.shortDescription}
           </h4>
           <!-- descripcion -->
           <p
-            class="w-full h-fit text-pretty tablet:pl-4 font-fredoka font-light text-xs tablet:text-xl laptop:text-2xl text-primary-300"
+            class="h-fit w-full text-pretty font-fredoka text-xs font-light text-primary-300 tablet:pl-4 tablet:text-xl laptop:text-2xl"
           >
             {product.description}
           </p>
-          <!-- precio -->
-          <!-- <p
-            class="w-full h-fit text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4"
-          >
-            $ {product.price}
-          </p> -->
+
           <!-- CAMBIO SUGERIDO PARA VER EL PRECIO SEGUN EL ENVASE -->
           <p
-            class="w-full h-fit text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4"
+            class="h-fit w-full text-balance text-center font-fredoka text-3xl font-semibold text-primary-400 tablet:pl-4 tablet:text-left tablet:text-5xl"
           >
             {
               product.presentations.length === 1 ? (
                 <>
                   ${product.presentations[0].price.toLocaleString('es-AR')}{' '}
-                  <span class="text-balance font-fredoka font-semibold text-lg tablet:text-xl text-primary-700 text-center tablet:text-left tablet:pl-4">
+                  <span class="text-balance text-center font-fredoka text-lg font-semibold text-primary-700 tablet:pl-4 tablet:text-left tablet:text-xl">
                     ({product.presentations[0].size})
                   </span>
                 </>
@@ -121,10 +97,10 @@ const displayCategoryName = categoryNames[categoria] || categoria;
                 <ul class="flex flex-col gap-6">
                   {product.presentations.map((p) => (
                     <li>
-                      <span class="text-balance font-fredoka font-semibold text-3xl tablet:text-5xl text-primary-400 text-center tablet:text-left tablet:pl-4">
+                      <span class="text-balance text-center font-fredoka text-3xl font-semibold text-primary-400 tablet:pl-4 tablet:text-left tablet:text-5xl">
                         ${p.price.toLocaleString('es-AR')}
                       </span>
-                      <span class="text-balance font-fredoka font-semibold text-lg tablet:text-xl text-primary-700 text-center tablet:text-left tablet:pl-4">
+                      <span class="text-balance text-center font-fredoka text-lg font-semibold text-primary-700 tablet:pl-4 tablet:text-left tablet:text-xl">
                         ({p.size})
                       </span>
                     </li>
@@ -134,10 +110,10 @@ const displayCategoryName = categoryNames[categoria] || categoria;
             }
           </p>
         </div>
-        <div class="w-11/12 h-fit">
+        <div class="h-fit w-11/12">
           <HowToBuyDialog client:visible />
         </div>
-        <div class="w-full tablet:w-11/12 bg-transparent">
+        <div class="w-full bg-transparent tablet:w-11/12">
           <ProductDetailTabs client:visible product={product} />
         </div>
       </section>

@@ -9,14 +9,21 @@ import Breadcrumbs from '@/components/islands/Breadcrumbs';
 <!-- contenedor -->
 <Layout title="Green Glow - Nuestro productos">
   <main
-    class="flex flex-col justify-start w-full items-center h-fit min-h-screen gap-y-8"
+    class="flex h-fit min-h-screen w-full flex-col items-center justify-start gap-y-8"
   >
     <Breadcrumbs productName="Productos" />
-    <div class="w-full text-center pl-4">
-      <h2 class="font-commissioner text-center text-primary-500 text-4xl font-semibold">
+    <div class="w-full pl-4 text-center">
+      <h2
+        class="text-center font-commissioner text-4xl font-semibold text-primary-500"
+      >
         Nuestros productos
       </h2>
     </div>
-    <ProductDisplay client:load products={products} selectedCategory={null} allProducts={products} />
+    <ProductDisplay
+      client:load
+      products={products}
+      selectedCategory={null}
+      allProducts={products}
+    />
   </main>
 </Layout>

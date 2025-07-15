@@ -1,29 +1,30 @@
 ---
 import { CaretCircleRight } from '@phosphor-icons/react';
 import { ButtonLink } from '@/components/custom/ButtonLink';
+import aboutIntro from '@/assets/about-intro.webp';
 ---
 
 <section
-  class="flex flex-col items-center justify-center gap-4 laptop:flex-row desktop:gap-11 2xl:gap-10 desktop:px-5 px-10 py-10 h-fit desktop:h-[640px] 2xl:h-[800px] w-full mobile:w-4/5"
+  class="flex h-fit w-full flex-col items-center justify-center gap-4 p-10 mobile:w-4/5 laptop:flex-row desktop:h-[640px] desktop:gap-11 desktop:px-5 2xl:h-[800px] 2xl:gap-10"
 >
   <!-- left -->
 
   <div
-    class="flex flex-col h-fit laptop:h-6/7 w-full laptop:w-1/2 justify-center tablet:justify-start items-center tablet:items-start py-8"
+    class="laptop:h-6/7 flex h-fit w-full flex-col items-center justify-center py-8 tablet:items-start tablet:justify-start laptop:w-1/2"
   >
     <div
-      class="flex flex-col gap-20 py-14 w-full h-fit laptop:h-full 2xl:w-[629px] 2xl:h-[637px]"
+      class="flex h-fit w-full flex-col gap-20 py-14 laptop:h-full 2xl:h-[637px] 2xl:w-[629px]"
     >
       <h2
-        class="text-primary-500 text-3xl text-center tablet:text-left tablet:text-5xl font-bold font-commissioner"
+        class="text-center font-commissioner text-3xl font-bold text-primary-500 tablet:text-left tablet:text-5xl"
       >
         ¡Descubre la belleza natural con <span
-          class="text-3xl tablet:text-5xl font-black text-primary-300"
+          class="text-3xl font-black text-primary-300 tablet:text-5xl"
           >GREEN GLOW</span
         >
       </h2>
       <p
-        class="text-base text-balance w-full text-center tablet:text-left tablet:text-xl font-semibold font-fredoka text-primary-300"
+        class="w-full text-balance text-center font-fredoka text-base font-semibold text-primary-300 tablet:text-left tablet:text-xl"
       >
         Te invitamos a experimentar la belleza en su forma mas pura, natural,
         efectiva y consciente. Únete a nosotros en este viaje hacia un futuro
@@ -31,12 +32,12 @@ import { ButtonLink } from '@/components/custom/ButtonLink';
       </p>
     </div>
     <div
-      class="flex mobile:flow-row items-center mobile:justify-center laptop:justify-start gap-4 p-4 w-fit h-1/8"
+      class="mobile:flow-row h-1/8 flex w-fit items-center gap-4 p-4 mobile:justify-center laptop:justify-start"
     >
       <ButtonLink
         href="/about"
         variant="default"
-        className="bg-primary-800 font-fredoka mobile:font-medium text-xs mobile:text-lg flex flex-row justify-center rounded-3xl text-primary-300"
+        className="flex flex-row justify-center rounded-3xl bg-primary-800 font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
         client:load
       >
         Conocenos <CaretCircleRight />
@@ -44,7 +45,7 @@ import { ButtonLink } from '@/components/custom/ButtonLink';
       <ButtonLink
         href="/productos"
         variant="outline"
-        className="bg-transparent border-primary-800 border-2 font-fredoka mobile:font-medium text-xs mobile:text-lg flex flex-row justify-center rounded-3xl text-primary-300"
+        className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
         client:load
       >
         Ver productos
@@ -53,7 +54,8 @@ import { ButtonLink } from '@/components/custom/ButtonLink';
   </div>
   <!-- derecha -->
   <div
-    class="h-[400px] tablet:h-[600px] desktop:h-full w-full laptop:w-1/2 bg-[url(../src/assets/about-intro.jpg)] bg-cover bg-center rounded-3xl"
+    class={`h-[400px] w-full rounded-3xl bg-cover bg-center tablet:h-[600px] laptop:w-1/2 desktop:h-full`}
+    style={`background-image: url('${aboutIntro.src}')`}
   >
   </div>
 </section>

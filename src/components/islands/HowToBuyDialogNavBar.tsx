@@ -1,39 +1,48 @@
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { X, Storefront, Handbag, FlagBannerFold } from "@phosphor-icons/react";
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { Storefront, Handbag, FlagBannerFold } from '@phosphor-icons/react';
 
 const HowToBuyDialogNavBar = () => {
-    return (
-        <Dialog>
-            <DialogTrigger asChild>
-                <Button className="w-fit p-0 m-0 tablet:w-full h-16 bg-transparent  text-primary-500 font-commissioner text-lg tablet:text-base font-normal tablet:text-center text-left hover:bg-transparent " >¿Cómo comprar?</Button>
-            </DialogTrigger>
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button className="m-0 h-16 w-fit bg-transparent p-0 text-left font-commissioner text-lg font-normal text-primary-500 hover:bg-transparent tablet:w-full tablet:text-center tablet:text-base">
+          ¿Cómo comprar?
+        </Button>
+      </DialogTrigger>
 
-            <DialogContent title="¿Cómo comprar?" aria-describedby="como-comprar" className="w-10/12 bg-primary-900 rounded-2xl text-primary-300 border-none flex flex-col items-center justify-evenly tablet:gap-8 ">
+      <DialogContent
+        title="¿Cómo comprar?"
+        aria-describedby="como-comprar"
+        className="flex w-10/12 flex-col items-center justify-evenly rounded-2xl border-none bg-primary-900 text-primary-300 tablet:gap-8"
+      >
+        <div className="space-y-8 py-4 tablet:p-8">
+          <div className="space-y-2 text-center font-fredoka text-primary-400">
+            <h3 className="text-xl font-medium tablet:text-3xl">Paso 1</h3>
+            <p className="text-xs font-normal tablet:text-lg">
+              Explora nuestro catalogo de productos en la web o en nuestro
+              WhatsApp
+            </p>
+            <Storefront className="mx-auto size-8" />
+          </div>
+          <div className="space-y-2 text-center font-fredoka text-primary-400">
+            <h3 className="text-xl font-medium tablet:text-3xl">Paso 2</h3>
+            <p className="text-xs font-normal tablet:text-lg">
+              Envíame un mensaje con los productos que te gustaron
+            </p>
+            <Handbag className="mx-auto size-8" />
+          </div>
+          <div className="space-y-2 text-center font-fredoka text-primary-400">
+            <h3 className="text-xl font-medium tablet:text-3xl">Paso 3</h3>
+            <p className="text-xs font-normal tablet:text-lg">
+              Preparamos tu pedido y coordinamos la forma de pago y de entrega
+            </p>
+            <FlagBannerFold className="mx-auto size-8" />
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
 
-                <div className="space-y-8 py-4 tablet:p-8 ">
-                    <div className="text-center space-y-2 font-fredoka text-primary-400">
-                        <h3 className="font-medium text-xl tablet:text-3xl">Paso 1</h3>
-                        <p className="font-normal text-xs tablet:text-lg">Explora nuestro catalogo de productos en la web o  en nuestro WhatsApp</p>
-                        <Storefront className="h-8 w-8 mx-auto" />
-                    </div>
-                    <div className="text-center space-y-2 font-fredoka text-primary-400">
-                        <h3 className="font-medium text-xl tablet:text-3xl">Paso 2</h3>
-                        <p className="font-normal text-xs tablet:text-lg">Envíame un mensaje con los productos que te gustaron</p>
-                        <Handbag className="h-8 w-8 mx-auto" />
-                    </div>
-                    <div className="text-center space-y-2 font-fredoka text-primary-400">
-                        <h3 className="font-medium text-xl tablet:text-3xl">Paso 3</h3>
-                        <p className="font-normal text-xs tablet:text-lg">Preparamos tu pedido y coordinamos la forma de pago y de entrega</p>
-                        <FlagBannerFold className="h-8 w-8 mx-auto" />
-                    </div>
-
-                </div>
-
-            </DialogContent>
-
-        </Dialog>
-    )
-}
-
-export default HowToBuyDialogNavBar
+export default HowToBuyDialogNavBar;

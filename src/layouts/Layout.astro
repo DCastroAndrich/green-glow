@@ -6,6 +6,7 @@ import '@fontsource-variable/commissioner';
 import Footer from '@/components/Footer.astro';
 import { Navbar } from '@/components/islands/Navbar';
 import FloatingButtons from '@/components/FloatingButtons.astro';
+import bgHero from '@/assets/bg-hero.webp';
 
 const { pathname } = Astro.url;
 
@@ -26,14 +27,16 @@ const { title } = Astro.props;
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <!-- FAVICON end -->
+    <link rel="preload" as="image" href={bgHero.src} />
+    <link rel="canonical" href={Astro.site + Astro.url.pathname} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body
-    class="bg-[url('/src/assets/bg.jpg')] min-h-screen w-full flex flex-col justify-between items-center"
+    class="flex min-h-screen w-full flex-col items-center justify-between bg-[url('/src/assets/bg.jpg')]"
   >
     <Navbar client:load />
-    <main class="flex-1 w-full flex flex-col items-center">
+    <main class="flex w-full flex-1 flex-col items-center">
       <slot />
     </main>
     {!pathname.startsWith('/contacto') && <FloatingButtons />}

@@ -2,33 +2,35 @@
 import { Image } from 'astro:assets';
 import logo from '@/assets/Logo.png';
 import heroLetters from '@/assets/heroLetters.png';
+import bgHero from '@/assets/bg-hero.webp';
 ---
 
 <header
   id="hero-section"
-  class="flex flex-col items-center justify-center h-screen w-full bg-[url(../src/assets/bg-hero.jpg)] bg-cover bg-center bg-no-repeat"
+  class={`flex h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat`}
+  style={`background-image: url('${bgHero.src}')`}
 >
-  <div class="absolute bg-black/50 h-screen w-full"></div>
+  <div class="absolute h-screen w-full bg-black/50"></div>
   <div
-    class="flex flex-col mobile:flex-row gap-0 items-center justify-center h-fit w-fit"
+    class="flex size-fit flex-col items-center justify-center gap-0 mobile:flex-row"
   >
     <Image
       src={logo}
       alt={'green glow logo'}
       width={550}
       height={550}
-      class="drop-shadow-xl w-3/5 mobile:w-1/2 h-auto"
+      class="h-auto w-3/5 drop-shadow-xl mobile:w-1/2"
     />
     <div
-      class="flex flex-col items-center mobile:items-start justify-center w-fit h-fit"
+      class="flex size-fit flex-col items-center justify-center mobile:items-start"
     >
       <Image
         src={heroLetters}
         alt={'green glow'}
-        class={'drop-shadow-xl w-4/5'}
+        class={'w-4/5 drop-shadow-xl'}
       />
       <h1
-        class="text-primary-500 font-commissioner font-semibold text-lg mobile:text-3xl z-10 relative"
+        class="relative z-10 font-commissioner text-lg font-semibold text-primary-500 mobile:text-3xl"
       >
         FITOCOSMETICA
       </h1>
