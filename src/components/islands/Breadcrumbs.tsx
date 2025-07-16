@@ -45,24 +45,45 @@ const Breadcrumbs = ({
   }
 
   return (
-    <Breadcrumb className="h-fit w-full items-center justify-start gap-1 pl-5 font-fredoka opacity-70 transition-opacity duration-300 hover:opacity-100 tablet:pl-8">
+    <Breadcrumb
+      aria-label="breadcrumb"
+      itemScope
+      itemType="https://schema.org/BreadcrumbList"
+      className="h-fit w-full items-center justify-start gap-1 pl-5 font-fredoka opacity-70 transition-opacity duration-300 hover:opacity-100 tablet:pl-8"
+    >
       <BreadcrumbList>
         {segments.map((segment, index) => {
           const isLast = index === segments.length - 1;
           return (
             <React.Fragment key={segment.label}>
-              <BreadcrumbItem>
+              <BreadcrumbItem
+                itemProp="itemListElement"
+                itemScope
+                itemType="https://schema.org/ListItem"
+                {...(isLast ? { 'aria-current': 'page' } : {})}
+              >
                 {isLast || !segment.href ? (
-                  <BreadcrumbPage className="text-xs font-light text-primary-200 tablet:text-sm desktop:text-base">
-                    {segment.label}
-                  </BreadcrumbPage>
+                  <>
+                    <BreadcrumbPage
+                      itemProp="name"
+                      aria-current="page"
+                      className="text-xs font-light text-primary-200 tablet:text-sm desktop:text-base"
+                    >
+                      {segment.label}
+                    </BreadcrumbPage>
+                    <meta itemProp="position" content={`${index + 1}`} />
+                  </>
                 ) : (
-                  <BreadcrumbLink
-                    className="text-xs font-extralight text-primary-300 transition-colors duration-200 hover:text-primary-200 tablet:text-sm desktop:text-base"
-                    href={segment.href}
-                  >
-                    {segment.label}
-                  </BreadcrumbLink>
+                  <>
+                    <BreadcrumbLink
+                      className="text-xs font-extralight text-primary-300 transition-colors duration-200 hover:text-primary-200 tablet:text-sm desktop:text-base"
+                      href={segment.href}
+                      itemProp="item"
+                    >
+                      <span itemProp="name">{segment.label}</span>
+                    </BreadcrumbLink>
+                    <meta itemProp="position" content={`${index + 1}`} />
+                  </>
                 )}
               </BreadcrumbItem>
               {!isLast && (

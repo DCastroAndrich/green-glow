@@ -31,7 +31,7 @@ const categoryNames: Record<string, string> = {
 const displayName = categoryNames[categoria.toLowerCase()] || categoria;
 ---
 
-<Layout title={`Green Glow - ${displayName}`}>
+<Layout title={`Green Glow - ${displayName}`} description={displayName}>
   <main
     class="flex h-fit min-h-screen w-full flex-col items-center justify-start gap-y-8"
   >

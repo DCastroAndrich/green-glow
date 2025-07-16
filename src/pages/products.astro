@@ -7,17 +7,20 @@ import Breadcrumbs from '@/components/islands/Breadcrumbs';
 ---
 
 <!-- contenedor -->
-<Layout title="Green Glow - Nuestro productos">
+<Layout
+  title="Green Glow - Nuestro productos"
+  description="Descubre nuestra línea completa de productos de fitocosmética natural. Aceites, cremas, geles y más, elaborados con ingredientes puros y efectivos."
+>
   <main
     class="flex h-fit min-h-screen w-full flex-col items-center justify-start gap-y-8"
   >
     <Breadcrumbs productName="Productos" />
     <div class="w-full pl-4 text-center">
-      <h2
+      <h1
         class="text-center font-commissioner text-4xl font-semibold text-primary-500"
       >
         Nuestros productos
-      </h2>
+      </h1>
     </div>
     <ProductDisplay
       client:load

@@ -21,7 +21,7 @@ import {
 } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
 import HowToBuyDialogNavBar from './HowToBuyDialogNavBar';
-import logoIcon from '../../../public/favicon-32x32.png';
+import logoIcon from '@/assets/Logo.webp';
 
 const items = [
   { nombre: 'Todos los productos', href: '/products', icon: FlowerLotus },

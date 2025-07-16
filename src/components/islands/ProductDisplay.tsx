@@ -1,15 +1,16 @@
 import React from 'react';
 import FilterBar from '@/components/islands/FilterBar';
 import ProductCard from '@/components/islands/ProductCard';
+import type { Product } from '@/data/products-data';
 
-interface Product {
+/* interface Product {
   id: number;
   name: string;
   category: string;
   description: string;
   presentations: { size: string; price: number }[];
   imageUrl: string;
-}
+} */
 
 interface ProductDisplayProps {
   products: Product[];
@@ -53,11 +54,12 @@ const ProductDisplay = ({
         selectedCategory={selectedCategory ?? null}
       />
       <div className="flex h-fit w-11/12 flex-col flex-wrap items-center justify-center gap-4 tablet:flex-row">
-        {filteredProducts.map((product) => (
+        {filteredProducts.map((product, index) => (
           <ProductCard
             key={product.id}
             product={product}
             selectedCategory={selectedCategory}
+            index={index}
           />
         ))}
       </div>

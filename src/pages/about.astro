@@ -2,12 +2,15 @@
 import Layout from '@/layouts/Layout.astro';
 import '@/styles/globals.css';
 import { Image } from 'astro:assets';
-import aboutHeader from '@/assets/about-01.jpg';
-import about2 from '@/assets/about-2.jpg';
-import about3 from '@/assets/about-3.jpg';
+import aboutHeader from '@/assets/about-01.webp';
+import about2 from '@/assets/about-2.webp';
+import about3 from '@/assets/about-3.webp';
 ---
 
-<Layout title="Green Glow - Sobre nosotros">
+<Layout
+  title="Green Glow - Sobre nosotros"
+  description="Conoce la historia, misión y compromiso de Green Glow, la marca de fitocosmética natural y sostenible."
+>
   <main class="flex h-fit w-full flex-col items-center justify-start gap-8">
     <!-- HEADER -->
 
@@ -17,12 +20,12 @@ import about3 from '@/assets/about-3.jpg';
       <div
         class="flex h-fit w-full flex-col items-center justify-center gap-2.5 desktop:w-[1301px] desktop:gap-12"
       >
-        <h2
+        <h1
           class="h-fit w-full text-center font-commissioner text-2xl font-semibold text-primary-400 tablet:text-4xl desktop:text-7xl"
         >
           Confiamos en la fuerza de la naturaleza para proteger y realzar la
           piel.
-        </h2>
+        </h1>
 
         <p
           class="h-fit w-11/12 text-pretty text-center font-fredoka text-sm font-normal text-primary-100 tablet:text-base desktop:w-10/12 desktop:text-3xl desktop:font-light"
@@ -35,8 +38,13 @@ import about3 from '@/assets/about-3.jpg';
       </div>
       <Image
         src={aboutHeader}
-        alt="Sobre nosotros"
+        alt="Equipo Green Glow - Sobre nosotros"
         class="top-0 h-[164px] w-10/12 rounded-2xl object-cover tablet:h-[341px] desktop:h-[606px]"
+        width={1300}
+        height={600}
+        format="webp"
+        sizes="(max-width: 768px) 90vw, (max-width: 1280px) 80vw, 1300px"
+        priority
       />
     </div>
 
@@ -45,17 +53,17 @@ import about3 from '@/assets/about-3.jpg';
     <div
       class="flex h-fit w-full flex-col items-center justify-start gap-8 bg-primary-100 p-12 desktop:h-[768px] desktop:flex-row desktop:justify-center"
     >
-      <h4
+      <h3
         class="font-commissioner text-sm font-semibold text-primary-900 tablet:text-lg desktop:text-xl"
       >
         NUESTRA MISION
-      </h4>
-      <h3
+      </h3>
+      <p
         class="h-fit w-full text-center font-commissioner text-xl font-semibold text-primary-600 tablet:w-[520px] tablet:text-left tablet:text-3xl desktop:text-4xl"
       >
         Promover el cuidado natural de la piel, fomentando una belleza saludable
         y sostenible.
-      </h3>
+      </p>
       <p
         class="h-fit w-full text-balance font-fredoka text-xs font-light text-primary-900 tablet:w-[520px] tablet:text-base desktop:text-xl"
       >
@@ -71,8 +79,12 @@ import about3 from '@/assets/about-3.jpg';
     >
       <Image
         src={about2}
-        alt="Sobre nosotros"
-        class="h-[164px] w-10/12 rounded-2xl object-cover tablet:h-[341px] desktop:h-[606px]"
+        alt="Nuestra misión - Sobre nosotros"
+        class="top-0 h-[164px] w-10/12 rounded-2xl object-cover tablet:h-[341px] desktop:h-[606px]"
+        width={1300}
+        height={600}
+        format="webp"
+        sizes="(max-width: 768px) 90vw, (max-width: 1280px) 80vw, 1300px"
       />
     </div>
 
@@ -81,17 +93,17 @@ import about3 from '@/assets/about-3.jpg';
     <div
       class="flex h-fit w-full flex-col items-center justify-start gap-8 bg-primary-100 p-12 desktop:h-[768px] desktop:flex-row desktop:justify-center"
     >
-      <h4
+      <h2
         class="font-commissioner text-sm font-semibold text-primary-900 tablet:text-lg desktop:text-xl"
       >
         NUESTRO COMPROMISO
-      </h4>
-      <h3
+      </h2>
+      <p
         class="h-fit w-full text-center font-commissioner text-xl font-semibold text-primary-600 tablet:w-[520px] tablet:text-left tablet:text-3xl desktop:text-4xl"
       >
         Ofrecer alternativas de belleza y cuidado personal elaborados con
         ingredientes naturales y orgánicos cuidadosamente seleccionados.
-      </h3>
+      </p>
       <div class="h-fit w-full tablet:w-[520px]">
         <ul
           class="flex h-fit w-full flex-col gap-4 text-balance font-fredoka text-xs font-light text-primary-900 tablet:text-base desktop:text-xl"
@@ -136,8 +148,12 @@ import about3 from '@/assets/about-3.jpg';
     >
       <Image
         src={about3}
-        alt="Sobre nosotros"
-        class="h-[164px] w-10/12 rounded-2xl object-cover tablet:h-[341px] desktop:h-[606px]"
+        alt="Compromiso ecológico Green Glow"
+        class="top-0 h-[164px] w-10/12 rounded-2xl object-cover tablet:h-[341px] desktop:h-[606px]"
+        width={1300}
+        height={600}
+        format="webp"
+        sizes="(max-width: 768px) 90vw, (max-width: 1280px) 80vw, 1300px"
       />
     </div>
 
@@ -146,17 +162,17 @@ import about3 from '@/assets/about-3.jpg';
     <div
       class="mb-14 flex h-fit w-full flex-col items-center justify-start gap-8 bg-primary-100 p-12 desktop:h-[768px] desktop:flex-row desktop:justify-center"
     >
-      <h4
+      <h2
         class="font-commissioner text-sm font-semibold text-primary-900 tablet:text-lg desktop:text-xl"
       >
         NUESTRA PROMESA
-      </h4>
-      <h3
+      </h2>
+      <p
         class="h-fit w-full text-center font-commissioner text-xl font-semibold text-primary-600 tablet:w-[520px] tablet:text-left tablet:text-3xl desktop:text-4xl"
       >
         Diseñar productos naturales, libres de tóxicos y compuestos dañinos,
         para armonizar la belleza con la salud y el respeto por la naturaleza.
-      </h3>
+      </p>
       <p
         class="h-fit w-full text-balance font-fredoka text-xs font-light text-primary-900 tablet:w-[520px] tablet:text-base desktop:text-xl"
       >

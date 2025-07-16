@@ -1,15 +1,18 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
-import heroLetters from '@/assets/heroLetters.png';
+import heroLetters from '@/assets/heroLetters.webp';
 import CopyEmailButton from '@/components/islands/CopyEmailButton.tsx';
-import logo from '@/assets/Logo.png';
+import logo from '@/assets/Logo.webp';
 
 import { Envelope, InstagramLogo, WhatsappLogo } from '@phosphor-icons/react';
 import '@/styles/globals.css';
 ---
 
-<Layout title="Green Glow - Contacto">
+<Layout
+  title="Green Glow - Contacto"
+  description="Contactá a Green Glow para consultas, pedidos o información sobre nuestros productos de fitocosmética natural. ¡Estamos para ayudarte!"
+>
   <main
     class="flex size-full flex-col items-center justify-between gap-10 laptop:flex-row"
   >
@@ -18,18 +21,25 @@ import '@/styles/globals.css';
     >
       <Image
         src={logo}
-        alt={'green glow logo'}
+        alt="green glow logo"
         width={550}
         height={550}
         class="h-auto w-3/5 drop-shadow-xl mobile:w-1/2"
+        format="webp"
+        sizes="(max-width: 1920px) 50vw, 33vw"
+        priority
       />
       <div
         class="flex size-fit flex-col items-center justify-center gap-10 laptop:items-start"
       >
         <Image
           src={heroLetters}
-          alt={'green glow'}
-          class={'w-4/5 drop-shadow-xl'}
+          alt="Green Glow - Marca de cosmética natural"
+          width={1024}
+          height={1024}
+          class="w-4/5 drop-shadow-xl"
+          format="webp"
+          sizes="(max-width: 1920px) 80vw, 40vw"
         />
         <h1
           class="relative z-10 font-commissioner text-lg font-semibold text-primary-500 mobile:text-3xl"

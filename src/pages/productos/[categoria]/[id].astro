@@ -33,7 +33,10 @@ const categoryNames: Record<string, string> = {
 const displayCategoryName = categoryNames[categoria] || categoria;
 ---
 
-<Layout title={`Green Glow - ${product.name}`}>
+<Layout
+  title={`Green Glow - ${product.name}`}
+  description={product.shortDescription}
+>
   <main
     class="flex h-fit min-h-screen w-full flex-col items-center justify-start gap-3"
   >
@@ -95,8 +98,8 @@ const displayCategoryName = categoryNames[categoria] || categoria;
                 </>
               ) : (
                 <ul class="flex flex-col gap-6">
-                  {product.presentations.map((p) => (
-                    <li>
+                  {product.presentations.map((p, index) => (
+                    <li key={p.size + index}>
                       <span class="text-balance text-center font-fredoka text-3xl font-semibold text-primary-400 tablet:pl-4 tablet:text-left tablet:text-5xl">
                         ${p.price.toLocaleString('es-AR')}
                       </span>
