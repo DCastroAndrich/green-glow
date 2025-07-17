@@ -5,59 +5,6 @@ import aboutIntro from '@/assets/about-intro.webp';
 import { Image } from 'astro:assets';
 ---
 
-<!-- 
-<section
-  class="flex h-fit w-full flex-col items-center justify-center gap-4 p-10 mobile:w-4/5 laptop:flex-row desktop:h-[640px] desktop:gap-11 desktop:px-5 2xl:h-[800px] 2xl:gap-10"
-> --><!-- left --><!--   <div
-    class="laptop:h-6/7 flex h-fit w-full flex-col items-center justify-center py-8 tablet:items-start tablet:justify-start laptop:w-1/2"
-  >
-    <div
-      class="flex h-fit w-full flex-col gap-20 py-14 laptop:h-full 2xl:h-[637px] 2xl:w-[629px]"
-    >
-      <h2
-        class="text-center font-commissioner text-3xl font-bold text-primary-500 tablet:text-left tablet:text-5xl"
-      >
-        ¡Descubre la belleza natural con <span
-          class="text-3xl font-black text-primary-300 tablet:text-5xl"
-          >GREEN GLOW</span
-        >
-      </h2>
-      <p
-        class="w-full text-balance text-center font-fredoka text-base font-semibold text-primary-300 tablet:text-left tablet:text-xl"
-      >
-        Te invitamos a experimentar la belleza en su forma mas pura, natural,
-        efectiva y consciente. Únete a nosotros en este viaje hacia un futuro
-        más verde y radiante.
-      </p>
-    </div>
-    <div
-      class="mobile:flow-row h-1/8 flex w-fit items-center gap-4 p-4 mobile:justify-center laptop:justify-start"
-    >
-      <ButtonLink
-        href="/about"
-        variant="default"
-        className="flex flex-row justify-center rounded-3xl bg-primary-800 font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
-        client:load
-      >
-        Conocenos <CaretCircleRight />
-      </ButtonLink>
-      <ButtonLink
-        href="/productos"
-        variant="outline"
-        className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
-        client:load
-      >
-        Ver productos
-      </ButtonLink>
-    </div>
-  </div>
- --><!-- derecha --><!--   <div
-    class={`h-[400px] w-full rounded-3xl bg-cover bg-center tablet:h-[600px] laptop:w-1/2 desktop:h-full`}
-    style={`background-image: url('${aboutIntro.src}')`}
-  >
-  </div>
-</section>
- -->
 <section
   class="flex h-fit w-full flex-col items-center justify-center gap-4 p-10 mobile:w-4/5 laptop:flex-row desktop:h-[640px] desktop:gap-11 desktop:px-5 2xl:h-[800px] 2xl:gap-10"
 >
@@ -96,7 +43,7 @@ import { Image } from 'astro:assets';
         Conócenos <CaretCircleRight />
       </ButtonLink>
       <ButtonLink
-        href="/productos"
+        href="/products"
         variant="outline"
         className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
         client:load
