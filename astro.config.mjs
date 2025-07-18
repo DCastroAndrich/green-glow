@@ -13,5 +13,18 @@ export default defineConfig({
     responsiveImages: true,
   },
   site: 'https://www.greenglow.com.ar',
-  integrations: [react(), tailwind({ applyBaseStyles: false }), sitemap()],
+  integrations: [
+    react(),
+    tailwind({ applyBaseStyles: false }),
+    sitemap({
+      // Configurar la frecuencia de cambio
+      changefreq: 'weekly',
+
+      // Configurar prioridad
+      priority: 0.7,
+
+      // Fecha de última modificación
+      lastmod: new Date(),
+    }),
+  ],
 });
