@@ -810,11 +810,11 @@ export const products: Product[] = [
   },
   {
     id: 26,
-    name: 'Tintura madre hidroalcohólica',
+    name: 'Tintura hidroalcohólica',
     shortDescription: 'Esencia vegetal concentrada',
     category: 'Aceites',
     description:
-      'La Tintura Madre Hidroalcohólica es una poderosa preparación botánica que captura la fuerza vital de las plantas a través de un proceso artesanal de maceración en alcohol y agua purificada. Este método tradicional permite extraer con precisión los principios activos de cada especie vegetal, creando un concentrado natural ideal para uso tópico o para preparar fórmulas cosméticas personalizadas.',
+      'La Tintura Hidroalcohólica es una poderosa preparación botánica que captura la fuerza vital de las plantas a través de un proceso artesanal de maceración en alcohol y agua purificada. Este método tradicional permite extraer con precisión los principios activos de cada especie vegetal, creando un concentrado natural ideal para uso tópico o para preparar fórmulas cosméticas personalizadas.',
     variants: [
       {
         name: 'Cannabis',
