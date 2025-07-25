@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/globals.css';
+import logo from '@/assets/Logo.webp';
+import heroLetters from '@/assets/heroLetters.webp';
+import { ButtonLink } from '@/components/custom/ButtonLink';
+---
+
+<Layout title="Green Glow - 404" description="Pagina no encontrada!">
+  <main
+    class="flex size-full flex-col items-center justify-between gap-10 laptop:flex-row"
+  >
+    <div
+      class="flex size-fit flex-col items-center justify-center gap-0 laptop:flex-row"
+    >
+      <Image
+        src={logo}
+        alt="green glow logo"
+        width={550}
+        height={550}
+        class="h-auto w-3/5 drop-shadow-xl mobile:w-1/2"
+        format="webp"
+        sizes="(max-width: 1920px) 50vw, 33vw"
+        priority
+      />
+      <div
+        class="flex size-fit flex-col items-center justify-center gap-10 laptop:items-start"
+      >
+        <Image
+          src={heroLetters}
+          alt="Green Glow - Marca de cosmética natural"
+          width={1024}
+          height={1024}
+          class="w-4/5 drop-shadow-xl"
+          format="webp"
+          sizes="(max-width: 1920px) 80vw, 40vw"
+        />
+        <h1
+          class="relative z-10 font-commissioner text-lg font-semibold text-primary-500 mobile:text-3xl"
+        >
+          FITOCOSMETICA
+        </h1>
+      </div>
+    </div>
+
+    <div
+      class="flex h-2/3 w-full flex-col items-center justify-center overflow-hidden laptop:h-full laptop:w-2/3"
+    >
+      <div
+        class="z-10 flex size-full flex-col items-center justify-center gap-5 text-nowrap p-12 text-primary-400 backdrop-blur-sm tablet:items-center tablet:gap-10"
+      >
+        <h2
+          class="z-10 font-fredoka text-6xl font-bold text-primary-500 mobile:text-9xl"
+        >
+          404
+        </h2>
+        <p
+          class="w-full text-center font-fredoka text-balance text-base tablet:gap-5 tablet:text-lg laptop:text-3xl"
+        >
+          Lo sentimos, la página que buscas no existe.
+        </p>
+        <div
+          class="mobile:flow-row h-1/8 flex w-fit items-center gap-4 mobile:justify-center laptop:justify-start"
+        >
+          <ButtonLink
+            href="/"
+            variant="outline"
+            className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
+            client:load
+          >
+            Home
+          </ButtonLink>
+          <ButtonLink
+            href="/about"
+            variant="outline"
+            className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
+            client:load
+          >
+            Conócenos
+          </ButtonLink>
+          <ButtonLink
+            href="/products"
+            variant="outline"
+            className="flex flex-row justify-center rounded-3xl border-2 border-primary-800 bg-transparent font-fredoka text-xs text-primary-300 mobile:text-lg mobile:font-medium"
+            client:load
+          >
+            Productos
+          </ButtonLink>
+        </div>
+      </div>
+    </div>
+  </main></Layout
+>
