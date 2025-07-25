@@ -1,0 +1,3 @@
+http://www.greenglow.com.ar/*  https://greenglow.com.ar/:splat  301!
+http://greenglow.com.ar/*      https://greenglow.com.ar/:splat  301!
+https://www.greenglow.com.ar/* https://greenglow.com.ar/:splat  301!
