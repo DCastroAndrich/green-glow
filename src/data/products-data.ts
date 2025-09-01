@@ -80,8 +80,8 @@ export const products: Product[] = [
     description:
       'Dejá que el cuerpo hable y se libere del peso del día con nuestro Aceite para Masajes, una línea formulada con aceites esenciales naturales que equilibran, relajan y descontracturan de manera profunda.Cada variante combina extractos vegetales cuidadosamente seleccionados para acompañar diferentes estados físicos y emocionales, aportando bienestar desde el primer contacto. Su textura sedosa facilita el deslizamiento de las manos y su aroma activa los sentidos, creando un momento de conexión y sanación. Apto para todo tipo de piel y personas que busquen un alivio natural a través del masaje terapéutico o relajante. Absorción media, ideal para masajes prolongados sin dejar sensación oleosa al finalizar.',
     presentations: [
-      { size: '60cc', price: 20000 },
-      { size: '100cc', price: 30000 },
+      { size: '60cc', price: 12000 },
+      { size: '100cc', price: 20000 },
     ],
     variants: [
       {
@@ -123,8 +123,8 @@ export const products: Product[] = [
     description:
       'Más que un limpiador, nuestro Aceite Desmaquillante es un ritual de cuidado consciente. Formulado con Vitamina E y aceite esencial de canela, ofrece una limpieza profunda que no solo remueve impurezas y maquillaje, sino que también fortalece, equilibra y revitaliza la piel.La canela, poderosa aliada en la medicina natural, actúa como purificante, antimicrobiana y estimulante del sistema inmunológico cutáneo, ayudando a prevenir imperfecciones y promover una piel más sana. En combinación con otras esencias, cada variedad potencia diferentes aspectos del cuidado facial. Apto para todo tipo de piel (incluyendo piel sensible, consultar variedad más adecuada). Textura sedosa, se retira fácilmente con paño húmedo o algodón sin dejar sensación grasa.',
     presentations: [
-      { size: '60cc', price: 4000 },
-      { size: '100cc', price: 6000 },
+      { size: '60cc', price: 5000 },
+      { size: '100cc', price: 8000 },
     ],
     variants: [
       {
@@ -370,7 +370,7 @@ export const products: Product[] = [
     category: 'Cremas',
     description:
       'La Crema Descontracturante es una fórmula armoniosa de origen natural que actúa directamente sobre contracturas, inflamaciones y tensiones musculares. Su combinación de principios activos de árnica, cannabis, romero, eucalipto y lavanda brinda un efecto relajante y antiinflamatorio, aliviando el malestar desde las capas más profundas. Enriquecida con aceites esenciales de enebro, caléndula, manzanilla y rilo, estimula la circulación, relaja la musculatura y promueve un estado de bienestar físico y mental, ideal para acompañar rutinas de autocuidado, prácticas deportivas o terapias corporales. Indicada para todas las edades, especialmente útil en situaciones de sobreesfuerzo, estrés corporal o dolencias crónicas.',
-    presentations: [{ size: '60cc', price: 30000 }],
+    presentations: [{ size: '60cc', price: 10000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la zona afectada y masajear suavemente hasta su completa absorción.',
       'Puede usarse varias veces al día, según necesidad.',
@@ -393,8 +393,8 @@ export const products: Product[] = [
     description:
       'Nuestra línea de Cremas Faciales ha sido desarrollada con una base natural compuesta por extracto de cannabis, agua destilada, glicerina vegetal y vitamina E, creando una sinergia perfecta entre hidratación, nutrición y protección antioxidante.Cada variedad responde a una necesidad específica de la piel, integrando aceites esenciales, extractos botánicos y principios activos seleccionados con enfoque holístico. Apta para todo tipo de piel, incluso las más delicadas.',
     presentations: [
-      { size: '30cc', price: 15000 },
-      { size: '60cc', price: 30000 },
+      { size: '30cc', price: 10000 },
+      { size: '60cc', price: 20000 },
     ],
     variants: [
       {
@@ -453,7 +453,7 @@ export const products: Product[] = [
     category: 'Cremas',
     description:
       'La Crema Medicinal es una fórmula de base suave y vegetal que combina ciencia botánica con el poder regenerativo de la naturaleza. Elaborada con cera lanette, agua destilada, glicerina vegetal y vitamina E, su textura ligera y emoliente es ideal para pieles sensibles o afectadas por molestias cutáneas. Desarrollada para ofrecer alivio, hidratación y recuperación, está disponible en distintas variedades que potencian sus propiedades terapéuticas.',
-    presentations: [{ size: '60cc', price: 30000 }],
+    presentations: [{ size: '60cc', price: 20000 }],
     variants: [
       {
         name: 'Cannabis y Árnica',
@@ -562,7 +562,7 @@ export const products: Product[] = [
     category: 'Cremas',
     description:
       'Nuestra Emulsión para Masajes ha sido cuidadosamente diseñada para acompañar momentos de cuidado corporal profundo, combinando ingredientes de origen vegetal con propiedades calmantes, descontracturantes y reparadoras. Su textura cremosa y de fácil absorción permite un deslizamiento suave durante el masaje, sin dejar sensación grasa.Contiene extracto de cannabis y árnica, reconocidos por su poder antiinflamatorio y analgésico natural, junto con aceite de romero, que estimula la circulación y relaja la musculatura. La glicerina vegetal y la vitamina E protegen e hidratan la piel, mientras que la manzanilla y el tilo brindan un efecto calmante tanto para el cuerpo como para la mente. Ideal para aliviar tensiones físicas y emocionales, esta emulsión transforma cada masaje en una experiencia integral de armonización.',
-    presentations: [{ size: '125cc', price: 35000 }],
+    presentations: [{ size: '250cc', price: 25000 }],
     howToUse: [
       'Aplicar sobre la piel limpia y seca en la zona deseada.',
       'Masajear suavemente con movimientos circulares hasta que la emulsión se absorba.',
@@ -631,7 +631,7 @@ export const products: Product[] = [
     category: 'Geles',
     description:
       'El Gel Forte es una sinergia botánica de alta concentración, diseñada para brindar alivio inmediato, profundo y prolongado a zonas del cuerpo sometidas a tensión, dolor o inflamación. Es la fusión del conocimiento ancestral de las plantas con el respaldo de la ciencia fitocosmética. Contiene tintura madre y aceite de cannabis, conocidos por su efecto antiinflamatorio y relajante muscular; aceite de árnica para reducir hematomas y contracturas; y aceite de romero, que estimula la circulación y mejora el tono muscular. La glicerina vegetal hidrata, mientras los cristales de mentol y el aceite esencial de eucalipto brindan una sensación de frescura y alivio inmediato. La vitamina E actúa como antioxidante, favoreciendo la regeneración de la piel. Perfecto para aplicar después del ejercicio, en jornadas de mucha exigencia física o ante molestias persistentes. Su fórmula penetra rápidamente sin dejar sensación grasa.',
-    presentations: [{ size: '60cc', price: 25000 }],
+    presentations: [{ size: '60cc', price: 15000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la zona deseada, masajeando suavemente hasta su completa absorción.',
       'Usar entre 2 y 3 veces por día, según necesidad.',
@@ -675,7 +675,7 @@ export const products: Product[] = [
     category: 'Cosméticos',
     description:
       'Nuestro Jabón Líquido fue formulado para brindar una experiencia de higiene profunda pero respetuosa, combinando la ciencia botánica con la sabiduría del bienestar natural. Ideal para el cuidado diario de manos y cuerpo. Contiene una base vegetal suave, enriquecida con betaina de coco, un agente limpiador derivado del coco que limpia sin resecar ni irritar. La tintura madre y los aceites esenciales seleccionados aportan propiedades terapéuticas únicas: equilibran, purifican y revitalizan la piel desde el primer contacto. Los tensioactivos naturales aseguran una espuma delicada, mientras que las esencias aromáticas convierten el momento del baño en un ritual sensorial. Apto para todo tipo de piel, incluso las más sensibles. Limpieza eficaz, libre de agresiones químicas.',
-    presentations: [{ size: '125cc', price: 2500 }],
+    presentations: [{ size: '125cc', price: 3000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la piel húmeda.',
       'Masajear suavemente hasta formar espuma y enjuagar con abundante agua.',
@@ -698,8 +698,8 @@ export const products: Product[] = [
     description:
       'La Leche de Limpieza es un tratamiento facial botánico que fusiona la ciencia del cuidado dermocosmético con la pureza de los ingredientes naturales. Formulada para limpiar en profundidad sin agredir la piel, equilibra, hidrata y deja una sensación de confort desde la primera aplicación. Su base cremosa contiene hidrolatos de rosas, que calman y tonifican, y pulpa de aloe vera, regeneradora por excelencia. La glicerina vegetal aporta hidratación duradera, mientras que el coco glucósido, un limpiador suave derivado del coco, elimina impurezas sin resecar. La vitamina E, antioxidante natural, protege contra el daño ambiental, y la cera lanette aporta una textura aterciopelada que se funde con la piel. Ideal para todo tipo de piel, incluso las más sensibles o secas, esta leche botánica limpia, hidrata y prepara la piel para una rutina completa de bienestar.',
     presentations: [
-      { size: '100cc', price: 5000 },
-      { size: '200cc', price: 8000 },
+      { size: '100cc', price: 6000 },
+      { size: '200cc', price: 10000 },
     ],
     howToUse: [
       'Aplicar una pequeña cantidad sobre el rostro seco o ligeramente húmedo.',
@@ -771,7 +771,7 @@ export const products: Product[] = [
     category: 'Cosméticos',
     description:
       'El Protector Solar Natural es una fusión armoniosa entre ciencia y naturaleza, diseñado para cuidar la piel del daño solar sin comprometer su equilibrio. Su fórmula suave, libre de químicos agresivos, protege mientras nutre y repara. El óxido de zinc actúa como filtro físico mineral, formando una barrera efectiva contra los rayos UVA y UVB. En sinergia, el aceite de coco, la esencia de jojoba, la zanahoria y la rosa mosqueta aportan hidratación, regeneración y elasticidad, protegiendo la piel del envejecimiento prematuro y las agresiones externas. La glicerina y la vitamina E refuerzan su acción antioxidante, dejando la piel suave, luminosa y protegida. Ideal para uso diario en rostro y cuerpo, incluso en pieles sensibles.',
-    presentations: [{ size: '50cc', price: 8000 }],
+    presentations: [{ size: '60cc', price: 8000 }],
     howToUse: [
       'Aplicar una cantidad suficiente sobre la piel limpia y seca, al menos 20 minutos antes de la exposición solar.',
       'Reaplicar cada 2 horas y después de nadar, sudar o secarse con toalla.',
@@ -793,7 +793,7 @@ export const products: Product[] = [
     category: 'Cosméticos',
     description:
       'El Sérum Facial es un elixir concentrado de juventud y vitalidad, formulado para ofrecer una hidratación profunda y una acción reparadora intensiva. Su textura ligera penetra en las capas más profundas de la piel, dejando un acabado suave, radiante y sin residuos grasos. En su núcleo, el ácido hialurónico y la glicerina vegetal trabajan en sinergia para retener la humedad y restaurar la elasticidad. El colágeno y la elastina promueven firmeza, mientras que el retinol suaviza líneas finas y potencia la renovación celular. El agua de azahar, conocida por sus propiedades calmantes, se combina con la vitamina E para proteger la piel del estrés oxidativo y aportar luminosidad natural. Indicado para todo tipo de piel, especialmente las que buscan revitalizar, prevenir el envejecimiento y potenciar su belleza natural.',
-    presentations: [{ size: '20cc', price: 20000 }],
+    presentations: [{ size: '20cc', price: 10000 }],
     howToUse: [
       'Aplicar 2 a 3 gotas sobre el rostro limpio y seco, masajeando con movimientos ascendentes hasta su absorción.',
       'Ideal para usar por la noche o antes de la crema hidratante.',
@@ -810,11 +810,11 @@ export const products: Product[] = [
   },
   {
     id: 26,
-    name: 'Tintura hidroalcohólica',
+    name: 'Tintura herbal',
     shortDescription: 'Esencia vegetal concentrada',
     category: 'Aceites',
     description:
-      'La Tintura Hidroalcohólica es una poderosa preparación botánica que captura la fuerza vital de las plantas a través de un proceso artesanal de maceración en alcohol y agua purificada. Este método tradicional permite extraer con precisión los principios activos de cada especie vegetal, creando un concentrado natural ideal para uso tópico o para preparar fórmulas cosméticas personalizadas.',
+      'La Tintura Herbal es una poderosa preparación botánica que captura la fuerza vital de las plantas a través de un proceso artesanal de maceración en alcohol. Este método tradicional permite extraer con precisión los principios activos de cada especie vegetal, creando un concentrado natural ideal para uso tópico o para preparar fórmulas cosméticas personalizadas.',
     variants: [
       {
         name: 'Cannabis',
@@ -833,8 +833,8 @@ export const products: Product[] = [
       },
     ],
     presentations: [
-      { size: '60cc', price: 20000 },
-      { size: '100cc', price: 30000 },
+      { size: '60cc', price: 12000 },
+      { size: '100cc', price: 20000 },
     ],
     howToUse: [
       'Aplicar unas gotas sobre la zona deseada realizando un suave masaje, o incorporar en cremas, lociones o ungüentos como principio activo natural.',
@@ -918,7 +918,7 @@ export const products: Product[] = [
           'regenera la piel, calma irritaciones, suaviza zonas agrietadas y contribuye al alivio de eccemas y picaduras.',
       },
     ],
-    presentations: [{ size: '60cc', price: 30000 }],
+    presentations: [{ size: '60cc', price: 20000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la zona afectada y masajear suavemente hasta formar una película delgada.',
       'Ideal para uso nocturno o tras el baño.',
