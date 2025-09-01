@@ -51,12 +51,67 @@ export interface Variant {
 export const products: Product[] = [
   {
     id: 1,
-    name: 'Aceite antiestrés',
-    shortDescription: 'Armonía natural en cada gota',
+    name: 'Aceite esencial',
+    shortDescription: 'Aromaterapia pura y bienestar natural',
     category: 'Aceites',
     description:
-      'Sumergite en una experiencia de serenidad con nuestro Aceite Antiestrés, una fórmula fitoterapéutica que combina el poder del aceite esencial de lavanda, el frescor cítrico del limón y la vitalidad purificante de la menta. Diseñado para aliviar tensiones, calmar la mente y reconectar con el equilibrio interior.La lavanda actúa como un sedante natural, regulando el sistema nervioso; el limón eleva el ánimo y disipa el agotamiento mental; mientras que la menta refresca y despeja la mente, abriendo espacio a la claridad y la respiración profunda. Esta sinergia aromática es ideal para quienes buscan alivio en momentos de ansiedad, cansancio o sobrecarga emocional. Indicado para todas las edades y estilos de vida, especialmente quienes buscan un alivio natural del estrés cotidiano. Textura liviana, se absorbe sin dejar residuos y su aroma permanece delicadamente en la piel.',
+      'Los Aceites Esenciales son extractos concentrados de plantas cuidadosamente seleccionadas para brindar armonía, equilibrio y bienestar tanto físico como emocional. Su pureza y potencia convierten cada gota en una herramienta natural para el cuidado personal, la relajación y la energía vital.',
     presentations: [{ size: '10cc', price: 5000 }],
+    variants: [
+      {
+        name: 'Antiestrés',
+        description:
+          'Diseñado para aliviar tensiones, calmar la mente y reconectar con el equilibrio interior.',
+      },
+      {
+        name: 'Tilo y Lavanda',
+        description:
+          'combinación calmante, ideal para el descanso y la relajación profunda.',
+      },
+      {
+        name: 'Tilo y manzanilla',
+        description:
+          'Calmante y reconfortante. Perfecto para masajes suaves orientados a relajar el sistema nervioso y reducir el estrés emocional.',
+      },
+      {
+        name: 'Tilo',
+        description: 'Promueve serenidad y equilibrio interior.',
+      },
+      {
+        name: 'Manzanilla',
+        description: 'Calma irritaciones y favorece la paz mental.',
+      },
+      {
+        name: 'Limón',
+        description:
+          'Revitalizante y purificante, eleva el ánimo y refresca el ambiente.',
+      },
+      {
+        name: 'Menta',
+        description: 'Refrescante y energizante, ayuda a despejar la mente.',
+      },
+      {
+        name: 'Romero',
+        description: 'Estimula la concentración y la vitalidad.',
+      },
+      {
+        name: 'Orégano',
+        description: 'Poderoso y protector, con propiedades purificantes.',
+      },
+      {
+        name: 'Coco',
+        description: 'Nutritivo y delicado, aporta suavidad y calidez.',
+      },
+      {
+        name: 'Rosas',
+        description: 'Armoniza emociones, suaviza y embellece la piel.',
+      },
+      {
+        name: 'Jazmín',
+        description:
+          'Sensual y equilibrante, despierta la confianza y la serenidad.',
+      },
+    ],
     howToUse: [
       'Aplicar una pequeña cantidad en puntos de pulso (muñecas, sienes, detrás de las orejas o en el pecho).',
       'Respirar profundamente durante unos segundos para potenciar su efecto aromaterapéutico.',
