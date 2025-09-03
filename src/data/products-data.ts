@@ -27,6 +27,52 @@ import tintura from '@/assets/prod-Tintura-de-cannabis-y-arnica.webp';
 import tonicoFacial from '@/assets/prod-Tonico-facial.webp';
 import unguentoMedicinal from '@/assets/prod-Unguento-medicinales.webp';
 import unguentoVick from '@/assets/prod-Unguento-VICK.webp';
+//nuevas imagenes
+import aceiteEsencial from '@/assets/prod-Aceite-esencial.jpeg';
+import gelPeinar2 from '@/assets/prod-Gel-para-peinar2.jpeg';
+import jabonLiquido2 from '@/assets/prod-Jabon-liquido2.jpeg';
+import protectorSolar2 from '@/assets/prod-Protector-solar2.jpeg';
+import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
+import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
+import saquitos1 from '@/assets/prod-Saquitos1.jpeg';
+import saquitos2 from '@/assets/prod-Saquitos2.jpeg';
+import saquitos3 from '@/assets/prod-Saquitos3.jpeg';
+import tinturaHerbal from '@/assets/prod-Tintura-herbal.jpeg';
+import unguentoArnica from '@/assets/prod-Unguento-arnica.jpeg';
+import unguentoArnRomCann from '@/assets/prod-Unguento-arnica-romero-cannabis.jpeg';
+import unguentoCalendula from '@/assets/prod-Unguento-calendula.jpeg';
+import unguentoDescongestivo from '@/assets/prod-Unguento-descongestivo.jpeg';
+import unguentoEucalipto from '@/assets/prod-Unguento-eucalipto.jpeg';
+import unguentoLavanda from '@/assets/prod-Unguento-lavanda.jpeg';
+import unguentoManzanilla from '@/assets/prod-Unguento-manzanilla.jpeg';
+import unguentoOregano from '@/assets/prod-Unguento-oregano.jpeg';
+import unguentoRomero from '@/assets/prod-Unguento-romero.jpeg';
+import unguentoTilo from '@/assets/prod-Unguento-tilo.jpeg';
+import unguentoTomillo from '@/assets/prod-Unguento-tomillo.jpeg';
+import aceiteDemaquillante2 from '@/assets/prod-Aceite-desmaquillante2.jpeg';
+import balsamoLabial2 from '@/assets/prod-Balsamo-labial2.jpeg';
+import balsamoLabial3 from '@/assets/prod-Balsamo-labial3.jpeg';
+import balsamoLabial4 from '@/assets/prod-Balsamo-labial4.jpeg';
+import contornoOjos from '@/assets/prod-Contorno-de-ojos.jpeg';
+import gelLimpiezaFacial from '@/assets/prod-Gel-de-limpieza-facial.jpeg';
+import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
+import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
+import serumFacial2 from '@/assets/prod-Serum-facial2.jpeg';
+import cremaAcida2 from '@/assets/prod-Crema-acida2.jpeg';
+import cremaAntiAge from '@/assets/prod-Crema-antiage.jpeg';
+import cremaBB from '@/assets/prod-Crema-BB.jpeg';
+import cremaHidratante from '@/assets/prod-Crema-hidratante.jpeg';
+import cremaHidratante2 from '@/assets/prod-Crema-hidratante2.jpeg';
+import cremaHidratante3 from '@/assets/prod-Crema-hidratante3.jpeg';
+import cremaHidratante4 from '@/assets/prod-Crema-hidratante4.jpeg';
+import cremaHumectante from '@/assets/prod-Crema-humectante.jpeg';
+import cremaManos2 from '@/assets/prod-Crema-para-manos2.jpeg';
+import cremaPeinar from '@/assets/prod-Crema-para-peinar.jpeg';
+import emulsionPrelavado from '@/assets/prod-Emulsion-prelavado.jpeg';
+import mantequillaCorporal from '@/assets/prod-Mantequilla-corporal.jpeg';
+import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal2.jpeg';
+import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal3.jpeg';
+import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal4.jpeg';
 
 type Categories = 'Aceites' | 'Cosméticos' | 'Cremas' | 'Geles' | 'Unguentos';
 
@@ -41,6 +87,7 @@ export interface Product {
   precautions: string[];
   presentations: { size: string; price: number }[];
   imageUrl: ImageMetadata;
+  images?: ImageMetadata[];
   isBestSeller: boolean;
 }
 export interface Variant {
