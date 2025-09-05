@@ -1,47 +1,48 @@
+/* aceites */
 import aceiteAntistress from '@/assets/prod-Aceite-anti-stress.webp';
+import aceiteEsencial from '@/assets/prod-Aceite-esencial.jpeg';
 import aceiteMasajes from '@/assets/prod-Aceite-de-Cannabis-y-Arnica.webp';
 import aceiteDemaquillante from '@/assets/prod-Aceite-desmaquillante.webp';
+import aceiteDemaquillante2 from '@/assets/prod-Aceite-desmaquillante2.jpeg';
 import aceiteSublingual from '@/assets/prod-Aceite-sublingual-de-cannabis.webp';
 import balsamoLabial from '@/assets/prod-Balsamo-labial.webp';
+import balsamoLabial2 from '@/assets/prod-Balsamo-labial-2.jpeg';
+import balsamoLabial3 from '@/assets/prod-Balsamo-labial-3.jpeg';
+import balsamoLabial4 from '@/assets/prod-Balsamo-labial-4.jpeg';
 import bodySplash from '@/assets/prod-Bodysplash.webp';
 import brumaFacial from '@/assets/prod-Bruma-facial.webp';
 import cremaAcida from '@/assets/prod-Crema-acida.webp';
+import cremaAcida2 from '@/assets/prod-Crema-acida2.jpeg';
 import cremaCelulitis from '@/assets/prod-Crema-anti-celulitis.webp';
 import cremaDescontracturante from '@/assets/prod-Crema-descontracturante.webp';
 import cremaFacial from '@/assets/prod-Crema-Facial.webp';
 import cremaMedicinal from '@/assets/prod-Crema-medicinal.webp';
 import cremaManos from '@/assets/prod-Crema-para-manos-II.webp';
+import cremaManos2 from '@/assets/prod-Crema-para-manos2.jpeg';
 import cremaMasaje from '@/assets/prod-Crema-para-masajes-cannabis-y-arnica.webp';
 import emulsionCorporal from '@/assets/prod-Emulsion-Corporal.webp';
 import gelCriogeno from '@/assets/prod-Gel-criogeno.webp';
 import gelLimpieza from '@/assets/prod-Gel-de-limpieza.webp';
+import gelLimpiezaFacial from '@/assets/prod-Gel-limpieza-facial.jpeg';
 import gelForte from '@/assets/prod-Gel-Forte.webp';
 import gelPeinar from '@/assets/prod-Gel-para-peinar.webp';
+import gelPeinar2 from '@/assets/prod-Gel-para-peinar2.jpeg';
 import jabonLiquido from '@/assets/prod-Jabon-liquido.webp';
+import jabonLiquido2 from '@/assets/prod-Jabon-liquido2.jpeg';
 import lecheLimpieza from '@/assets/prod-Leche-de-limpieza.webp';
 import oroLiquido from '@/assets/prod-Oro-liquido.webp';
 import pomadaRegenerador from '@/assets/prod-Pomada-Regeneradora.webp';
 import protectorSolar from '@/assets/prod-Protector-solar.webp';
+import protectorSolar2 from '@/assets/prod-Protector-solar2.jpeg';
 import serumFacial from '@/assets/prod-Serum-facial.webp';
+import serumFacial2 from '@/assets/prod-Serum-facial2.jpeg';
 import tintura from '@/assets/prod-Tintura-de-cannabis-y-arnica.webp';
+import tinturaHerbal from '@/assets/prod-Tintura-herbal.jpeg';
 import tonicoFacial from '@/assets/prod-Tonico-facial.webp';
 import unguentoMedicinal from '@/assets/prod-Unguento-medicinales.webp';
-import unguentoVick from '@/assets/prod-Unguento-VICK.webp';
-//nuevas imagenes
-import aceiteEsencial from '@/assets/prod-Aceite-esencial.jpeg';
-import gelPeinar2 from '@/assets/prod-Gel-para-peinar2.jpeg';
-import jabonLiquido2 from '@/assets/prod-Jabon-liquido2.jpeg';
-import protectorSolar2 from '@/assets/prod-Protector-solar2.jpeg';
-import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
-import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
-import saquitos1 from '@/assets/prod-Saquitos1.jpeg';
-import saquitos2 from '@/assets/prod-Saquitos2.jpeg';
-import saquitos3 from '@/assets/prod-Saquitos3.jpeg';
-import tinturaHerbal from '@/assets/prod-Tintura-herbal.jpeg';
 import unguentoArnica from '@/assets/prod-Unguento-arnica.jpeg';
 import unguentoArnRomCann from '@/assets/prod-Unguento-arnica-romero-cannabis.jpeg';
 import unguentoCalendula from '@/assets/prod-Unguento-calendula.jpeg';
-import unguentoDescongestivo from '@/assets/prod-Unguento-descongestivo.jpeg';
 import unguentoEucalipto from '@/assets/prod-Unguento-eucalipto.jpeg';
 import unguentoLavanda from '@/assets/prod-Unguento-lavanda.jpeg';
 import unguentoManzanilla from '@/assets/prod-Unguento-manzanilla.jpeg';
@@ -49,30 +50,36 @@ import unguentoOregano from '@/assets/prod-Unguento-oregano.jpeg';
 import unguentoRomero from '@/assets/prod-Unguento-romero.jpeg';
 import unguentoTilo from '@/assets/prod-Unguento-tilo.jpeg';
 import unguentoTomillo from '@/assets/prod-Unguento-tomillo.jpeg';
-import aceiteDemaquillante2 from '@/assets/prod-Aceite-desmaquillante2.jpeg';
-import balsamoLabial2 from '@/assets/prod-Balsamo-labial2.jpeg';
-import balsamoLabial3 from '@/assets/prod-Balsamo-labial3.jpeg';
-import balsamoLabial4 from '@/assets/prod-Balsamo-labial4.jpeg';
-import contornoOjos from '@/assets/prod-Contorno-de-ojos.jpeg';
-import gelLimpiezaFacial from '@/assets/prod-Gel-de-limpieza-facial.jpeg';
+import unguentoVick from '@/assets/prod-Unguento-VICK.webp';
+import unguentoDescongestivo from '@/assets/prod-Unguento-descongestivo.jpeg';
+import cremaBB from '@/assets/prod-Crema-BB.jpeg';
+import contornoOjos from '@/assets/prod-Contorno-ojos.jpeg';
+import saquitos1 from '@/assets/prod-Saquitos-1.jpeg';
+import saquitos2 from '@/assets/prod-Saquitos-2.jpeg';
+import saquitos3 from '@/assets/prod-Saquitos-3.jpeg';
+
+//nuevas imagenes
+import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
+import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
+
 import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
 import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
-import serumFacial2 from '@/assets/prod-Serum-facial2.jpeg';
-import cremaAcida2 from '@/assets/prod-Crema-acida2.jpeg';
+
 import cremaAntiAge from '@/assets/prod-Crema-antiage.jpeg';
-import cremaBB from '@/assets/prod-Crema-BB.jpeg';
+
 import cremaHidratante from '@/assets/prod-Crema-hidratante.jpeg';
-import cremaHidratante2 from '@/assets/prod-Crema-hidratante2.jpeg';
-import cremaHidratante3 from '@/assets/prod-Crema-hidratante3.jpeg';
-import cremaHidratante4 from '@/assets/prod-Crema-hidratante4.jpeg';
+import cremaHidratante2 from '@/assets/prod-Crema-hidratante-2.jpeg';
+import cremaHidratante3 from '@/assets/prod-Crema-hidratante-3.jpeg';
+import cremaHidratante4 from '@/assets/prod-Crema-hidratante-4.jpeg';
 import cremaHumectante from '@/assets/prod-Crema-humectante.jpeg';
-import cremaManos2 from '@/assets/prod-Crema-para-manos2.jpeg';
 import cremaPeinar from '@/assets/prod-Crema-para-peinar.jpeg';
+
 import emulsionPrelavado from '@/assets/prod-Emulsion-prelavado.jpeg';
+
 import mantequillaCorporal from '@/assets/prod-Mantequilla-corporal.jpeg';
-import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal2.jpeg';
-import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal3.jpeg';
-import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal4.jpeg';
+import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal-2.jpeg';
+import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal-3.jpeg';
+import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal-4.jpeg';
 
 type Categories = 'Aceites' | 'Cosméticos' | 'Cremas' | 'Geles' | 'Unguentos';
 
@@ -172,6 +179,7 @@ export const products: Product[] = [
       'Mantener en lugar fresco, seco y fuera del alcance de los niños.',
     ],
     imageUrl: aceiteAntistress,
+    images: [aceiteAntistress, aceiteEsencial],
     isBestSeller: false,
   },
   {
@@ -259,6 +267,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco, seco y fuera del alcance de los niños.',
     ],
     imageUrl: aceiteDemaquillante,
+    images: [aceiteDemaquillante, aceiteDemaquillante2],
     isBestSeller: false,
   },
   {
@@ -322,6 +331,7 @@ export const products: Product[] = [
       'No utilizar si presenta alergia a alguno de los componentes (en especial, derivados de la abeja).',
     ],
     imageUrl: balsamoLabial,
+    images: [balsamoLabial, balsamoLabial2, balsamoLabial3, balsamoLabial4],
     isBestSeller: false,
   },
   {
@@ -441,6 +451,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de los niños.',
     ],
     imageUrl: cremaAcida,
+    images: [cremaAcida, cremaAcida2],
     isBestSeller: false,
   },
   {
@@ -634,6 +645,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
     ],
     imageUrl: cremaManos,
+    images: [cremaManos, cremaManos2],
     isBestSeller: true,
   },
 
@@ -724,6 +736,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
     ],
     imageUrl: gelLimpieza,
+    images: [gelLimpieza, gelLimpiezaFacial],
     isBestSeller: false,
   },
   {
@@ -768,6 +781,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
     ],
     imageUrl: gelPeinar,
+    images: [gelPeinar, gelPeinar2],
     isBestSeller: false,
   },
   {
@@ -790,6 +804,7 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
     ],
     imageUrl: jabonLiquido,
+    images: [jabonLiquido, jabonLiquido2],
     isBestSeller: false,
   },
   {
@@ -886,6 +901,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y oscuro.',
     ],
     imageUrl: protectorSolar,
+    images: [protectorSolar, protectorSolar2],
     isBestSeller: false,
   },
   {
@@ -908,6 +924,7 @@ export const products: Product[] = [
       'Almacenar en lugar fresco, seco y oscuro.',
     ],
     imageUrl: serumFacial,
+    images: [serumFacial, serumFacial2],
     isBestSeller: true,
   },
   {
@@ -949,6 +966,7 @@ export const products: Product[] = [
       'Conservar en lugar fresco y protegido de la luz solar directa.',
     ],
     imageUrl: tintura,
+    images: [tintura, tinturaHerbal],
     isBestSeller: false,
   },
   {
@@ -1000,9 +1018,38 @@ export const products: Product[] = [
       'El Ungüento Medicinal es una fórmula artesanal y profunda que fusiona el poder ancestral de los hidrolatos, la cera de abejas, el agua destilada, la glicerina vegetal y la vitamina E. Su textura untuosa permite una aplicación localizada, formando una capa protectora que favorece la regeneración y el alivio prolongado. Diseñado para acompañar procesos de recuperación física, este ungüento está disponible en diferentes variedades, cada una con propiedades específicas que armonizan cuerpo y bienestar:',
     variants: [
       {
-        name: 'Cannabis y Árnica',
+        name: 'Árnica',
+        description: 'ideal para golpes, moretones y tensiones musculares.',
+      },
+      {
+        name: 'Árnica, romero y cannabis',
         description:
-          'alivia dolores musculares, reduce inflamaciones y promueve la recuperación de hematomas y golpes.',
+          'fórmula intensiva para aliviar dolores musculares, inflamaciones y contracturas.',
+      },
+      {
+        name: 'Caléndula',
+        description:
+          'calmante y regeneradora, perfecta para piel sensible, irritada o dañada.',
+      },
+      {
+        name: 'Eucalipto',
+        description:
+          'ayuda a descongestionar y relajar, recomendado para masajes en zonas de tensión.',
+      },
+      {
+        name: 'Lavanda',
+        description:
+          'relajante y equilibrante, favorece la calma y el descanso.',
+      },
+      {
+        name: 'Manzanilla',
+        description:
+          'suavizante y antiinflamatoria, indicada para piel delicada o con irritaciones leves.',
+      },
+      {
+        name: 'Orégano',
+        description:
+          'con efecto purificante y tonificante, ideal para revitalizar.',
       },
       {
         name: 'Romero',
@@ -1010,14 +1057,13 @@ export const products: Product[] = [
           'estimula la circulación, relaja tensiones localizadas y revitaliza tejidos cansados.',
       },
       {
-        name: 'Lavanda y Romero',
-        description:
-          'combinación equilibrada que relaja profundamente, desinflama y mejora el descanso muscular.',
+        name: 'Tilo',
+        description: 'contribuye a la relajación y al bienestar general.',
       },
       {
-        name: 'Caléndula',
+        name: 'Tomillo',
         description:
-          'regenera la piel, calma irritaciones, suaviza zonas agrietadas y contribuye al alivio de eccemas y picaduras.',
+          'con propiedades fortalecedoras y revitalizantes, recomendado para masajes energizantes.',
       },
     ],
     presentations: [{ size: '60cc', price: 20000 }],
@@ -1033,6 +1079,19 @@ export const products: Product[] = [
       'Mantener fuera del alcance de niños.',
     ],
     imageUrl: unguentoMedicinal,
+    images: [
+      unguentoMedicinal,
+      unguentoArnica,
+      unguentoArnRomCann,
+      unguentoCalendula,
+      unguentoEucalipto,
+      unguentoLavanda,
+      unguentoManzanilla,
+      unguentoOregano,
+      unguentoRomero,
+      unguentoTilo,
+      unguentoTomillo,
+    ],
     isBestSeller: false,
   },
   {
@@ -1046,16 +1105,143 @@ export const products: Product[] = [
     howToUse: [
       'Aplicar una pequeña cantidad sobre la piel limpia y seca del pecho, cuello o espalda.',
       'Masajear suavemente hasta su absorción.',
-      'Evitar contacto con ojos y mucosas.',
-      'Uso externo.',
     ],
     precautions: [
       'No usar en niños menores de 2 años.',
+      'Evitar contacto con ojos y mucosas.',
       'No aplicar sobre piel irritada o heridas abiertas.',
       'Evitar exposición al sol tras su uso.',
       'Almacenar en lugar fresco y protegido de la luz.',
+      'Uso externo.',
     ],
     imageUrl: unguentoVick,
+    images: [unguentoVick, unguentoDescongestivo],
+    isBestSeller: false,
+  },
+  {
+    id: 30,
+    name: 'BB Cream Color',
+    shortDescription: 'Hidratación, cuidado y cobertura natural',
+    category: 'Cosméticos',
+    description:
+      'La BB Cream Color es un tratamiento multifuncional que fusiona el poder de la cosmética con el cuidado profundo de la piel. Su fórmula combina vitaminas, minerales y activos regeneradores para hidratar, proteger y unificar el tono del rostro en un solo paso. La BB Crema aporta múltiples beneficios: hidratación y nutrición gracias a la acción de las vitaminas A, C y E, que aportan luminosidad y vitalidad; efecto anti-edad con ácido hialurónico y colágeno, que mejoran la elasticidad y reducen la apariencia de líneas finas; protección natural frente a los rayos UV y la contaminación gracias al óxido de zinc y al óxido de titanio, actuando como filtros minerales; cobertura ligera y uniforme, brindada por pigmentos minerales que suavizan imperfecciones sin obstruir los poros; acabado natural, ideal para el uso diario en todo tipo de piel.',
+    presentations: [{ size: '30cc', price: 8000 }],
+    howToUse: [
+      'Aplicar una pequeña cantidad sobre la piel limpia y seca, distribuyendo de manera uniforme con la yema de los dedos o una esponja de maquillaje.',
+      'Puede usarse sola o como base previa al maquillaje.',
+    ],
+    precautions: [
+      'No aplicar sobre piel irritada o heridas abiertas.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Evitar contacto con ojos y mucosas.',
+      'Uso externo.',
+    ],
+    imageUrl: cremaBB,
+    isBestSeller: false,
+  },
+  {
+    id: 31,
+    name: 'Contorno de Ojos',
+    shortDescription: 'Luminosidad y frescura para tu mirada',
+    category: 'Cosméticos',
+    description:
+      'El Contorno de Ojos ha sido diseñado para cuidar la zona más delicada del rostro, brindando hidratación, firmeza y vitalidad. Su fórmula avanzada combina activos naturales y antioxidantes que trabajan en sinergia para iluminar la mirada y reducir signos de cansancio, el Ácido hialurónico hidrata en profundidad y mejora la elasticidad de la piel, las Vitaminas C y E son potentes antioxidantes que combaten radicales libres y aportan luminosidad, la Cafeína y extracto de pepino ayudan a descongestionar, reducir bolsas y ojeras, aportando frescura inmediata, la Niacinamida: unifica el tono, fortalece la barrera cutánea y suaviza líneas de expresión. El resultado es una mirada más despierta, radiante y rejuvenecida.',
+    presentations: [{ size: '15cc', price: 8000 }],
+    howToUse: [
+      'Aplicar una pequeña cantidad en la zona del contorno de ojos, dando suaves toques con la yema de los dedos hasta su absorción completa.',
+      'Usar mañana y noche sobre la piel limpia.',
+    ],
+    precautions: [
+      'No aplicar sobre piel irritada o heridas abiertas.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Mantener fuera del alcance de los niños.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Evitar contacto con ojos y mucosas.',
+      'Uso externo.',
+    ],
+    imageUrl: contornoOjos,
+    isBestSeller: false,
+  },
+  {
+    id: 32,
+    name: 'Saquitos perfumados',
+    shortDescription: 'Fragancias naturales para equilibrar tus espacios',
+    category: 'Cosméticos',
+    description:
+      'Los Saquitos Perfumados son una manera práctica y delicada de llevar la magia de las esencias naturales a tu vida cotidiana. Elaborados con ingredientes botánicos y aromáticos, cada saquito libera un perfume sutil y duradero que armoniza ambientes, ropa y objetos personales.',
+    variants: [
+      {
+        name: 'Rosa',
+        description:
+          'romántica y equilibrante, eleva el ánimo y brinda serenidad.',
+      },
+      {
+        name: 'Lavanda',
+        description: 'relajante y calmante, ideal para promover el descanso.',
+      },
+      {
+        name: 'Jazmín',
+        description: 'sensual y armonizante, despierta emociones positivas.',
+      },
+      {
+        name: 'Menta',
+        description:
+          'fresca y revitalizante, perfecta para estimular la energía.',
+      },
+      {
+        name: 'Limón',
+        description: 'cítrica y purificante, aporta frescura y claridad.',
+      },
+      {
+        name: 'Tilo',
+        description: 'suave y tranquilizante, ayuda a relajar la mente.',
+      },
+      {
+        name: 'Vainilla',
+        description: 'dulce y reconfortante, invita al bienestar y la calidez.',
+      },
+    ],
+    presentations: [{ size: 'pack x 3u', price: 5000 }],
+    howToUse: [
+      'Colocar el saquito en el lugar elegido. Su fragancia se libera de manera gradual durante semanas.',
+      'Para prolongar su aroma, se recomienda agitar suavemente el saquito cada cierto tiempo.',
+    ],
+    precautions: [
+      'No abrir ni ingerir el contenido.',
+      'Mantener fuera del alcance de los niños y mascotas.',
+    ],
+    imageUrl: saquitos1,
+    images: [saquitos1, saquitos2, saquitos3],
+    isBestSeller: false,
+  },
+  {
+    id: 33,
+    name: 'Mantequilla corporal',
+    shortDescription: 'Nutrición intensa y suavidad duradera',
+    category: 'Cosméticos',
+    description:
+      'La mantequilla corporal es un bálsamo nutritivo que combina aceite de coco, manteca de karité, aceite de almendras y vitamina E para brindar hidratación profunda y prolongada. Su textura cremosa se funde en la piel, devolviéndole elasticidad, suavidad y un aspecto radiante. Gracias a sus aceites aromáticos, también envuelve los sentidos con una fragancia delicada que aporta bienestar y relajación. Ideal para pieles secas, ásperas o que necesitan un mimo extra.',
+    presentations: [{ size: '100cc', price: 5000 }],
+    howToUse: [
+      'Aplicar una pequeña cantidad sobre la piel limpia y seca, masajeando suavemente hasta su total absorción.',
+      'Puede utilizarse diariamente en todo el cuerpo, especialmente en zonas como codos, rodillas y talones.',
+    ],
+    precautions: [
+      'No aplicar sobre piel irritada o heridas abiertas.',
+      'Evitar contacto con ojos y mucosas.',
+      'Mantener fuera del alcance de los niños.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: mantequillaCorporal,
+    images: [
+      mantequillaCorporal,
+      mantequillaCorporal2,
+      mantequillaCorporal3,
+      mantequillaCorporal4,
+    ],
     isBestSeller: false,
   },
 ];

@@ -5,6 +5,7 @@ import HowToBuyDialog from '@/components/islands/HowToBuyDialog';
 import ProductDetailTabs from '@/components/islands/ProductDetailTabs';
 import { products } from '../../../data/products-data.ts';
 import Breadcrumbs from '@/components/islands/Breadcrumbs';
+import ProductImageCarousel from '@/components/islands/ProductImageCarousel';
 
 export async function getStaticPaths() {
   return products.map((product) => {
@@ -31,6 +32,8 @@ const categoryNames: Record<string, string> = {
 };
 
 const displayCategoryName = categoryNames[categoria] || categoria;
+const images = product.images?.length ? product.images : [product.imageUrl];
+const imageSrcs = images.map((image) => image.src);
 ---
 
 <Layout
@@ -52,11 +55,10 @@ const displayCategoryName = categoryNames[categoria] || categoria;
       <div
         class="mt-4 h-full w-11/12 items-center laptop:h-[1200px] desktop:ml-6"
       >
-        <img
-          id="product-image"
-          src={product.imageUrl.src}
+        <ProductImageCarousel
+          client:visible
+          images={imageSrcs}
           alt={product.name}
-          class={'size-full rounded-3xl object-cover'}
         />
       </div>
 
