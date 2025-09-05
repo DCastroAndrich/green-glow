@@ -1,6 +1,7 @@
 # Redirige cualquier www (http o https) a la versión sin www y con https
-http://www.greenglow.com.ar/*  https://greenglow.com.ar/:splat  301!
-https://www.greenglow.com.ar/* https://greenglow.com.ar/:splat  301!
+http://greenglow.com.ar/*  https://www.greenglow.com.ar/:splat  301!
+https://greenglow.com.ar/* https://www.greenglow.com.ar/:splat  301!
 
 # Redirige http sin www a https sin www
 http://greenglow.com.ar/*      https://greenglow.com.ar/:splat  301!
+http://www.greenglow.com.ar/*      https://www.greenglow.com.ar/:splat  301!

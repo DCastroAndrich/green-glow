@@ -75,7 +75,7 @@ export const Navbar = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/products"
+                  href="/productos"
                   className={cn(
                     'px-3 py-2 transition-colors duration-200',
                     isActive('/products') && activeClass
