@@ -57,9 +57,16 @@ import contornoOjos from '@/assets/prod-Contorno-ojos.jpeg';
 import saquitos1 from '@/assets/prod-Saquitos-1.jpeg';
 import saquitos2 from '@/assets/prod-Saquitos-2.jpeg';
 import saquitos3 from '@/assets/prod-Saquitos-3.jpeg';
+import mantequillaCorporal from '@/assets/prod-Mantequilla-corporal.jpeg';
+import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal-2.jpeg';
+import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal-3.jpeg';
+import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal-4.jpeg';
+import jabon from '@/assets/prod-Jabones.jpeg';
+import jabon2 from '@/assets/prod-Jabones-2.jpeg';
 
 //nuevas imagenes
 import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
+
 import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
 
 import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
@@ -71,15 +78,12 @@ import cremaHidratante from '@/assets/prod-Crema-hidratante.jpeg';
 import cremaHidratante2 from '@/assets/prod-Crema-hidratante-2.jpeg';
 import cremaHidratante3 from '@/assets/prod-Crema-hidratante-3.jpeg';
 import cremaHidratante4 from '@/assets/prod-Crema-hidratante-4.jpeg';
+
 import cremaHumectante from '@/assets/prod-Crema-humectante.jpeg';
+
 import cremaPeinar from '@/assets/prod-Crema-para-peinar.jpeg';
 
 import emulsionPrelavado from '@/assets/prod-Emulsion-prelavado.jpeg';
-
-import mantequillaCorporal from '@/assets/prod-Mantequilla-corporal.jpeg';
-import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal-2.jpeg';
-import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal-3.jpeg';
-import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal-4.jpeg';
 
 type Categories = 'Aceites' | 'Cosméticos' | 'Cremas' | 'Geles' | 'Unguentos';
 
@@ -513,36 +517,36 @@ export const products: Product[] = [
       {
         name: 'Nutritiva',
         description:
-          'con aceite de jojoba, manteca de karité y pulpa de aloe vera. Restaura, suaviza y revitaliza pieles secas o apagadas.',
+          'Con aceite de jojoba, manteca de karité y pulpa de aloe vera. Restaura, suaviza y revitaliza pieles secas o apagadas.',
       },
       {
         name: 'Hidratante (coco y cacao)',
         description:
-          'con aceite de coco, manteca de cacao y cera de abejas. Aporta hidratación profunda y barrera protectora.',
+          'Con aceite de coco, manteca de cacao y cera de abejas. Aporta hidratación profunda y barrera protectora.',
       },
       {
         name: 'Hidratante (germen de trigo y damasco)',
         description:
-          'ideal para piel sensible, aporta elasticidad y mejora la textura.',
+          'Ideal para piel sensible, aporta elasticidad y mejora la textura.',
       },
       {
         name: 'Ultra Hidratante',
         description:
-          'con manteca de mango y aceite de caléndula. Rica en emolientes naturales que nutren intensamente sin obstruir los poros.',
+          'Con manteca de mango y aceite de caléndula. Rica en emolientes naturales que nutren intensamente sin obstruir los poros.',
       },
       {
         name: 'Anti Edad',
         description:
-          'con colágeno, elastina, aceite de argán, ácido hialurónico y extracto de equisetum. Suaviza líneas finas y mejora la firmeza cutánea.',
+          'Con colágeno, elastina, aceite de argán, ácido hialurónico y extracto de equisetum. Suaviza líneas finas y mejora la firmeza cutánea.',
       },
       {
         name: 'Humectante (karité y jazmín)',
-        description: 'textura ligera y aroma floral, ideal para uso diario.',
+        description: 'Textura ligera y aroma floral, ideal para uso diario.',
       },
       {
         name: 'Humectante (coco y vainilla)',
         description:
-          'combina aceite de coco puro y vainilla natural para una experiencia sensorial relajante y piel radiante.',
+          'Combina aceite de coco puro y vainilla natural para una experiencia sensorial relajante y piel radiante.',
       },
     ],
     howToUse: [
@@ -571,22 +575,22 @@ export const products: Product[] = [
       {
         name: 'Cannabis y Árnica',
         description:
-          'acción antiinflamatoria, analgésica y regenerativa. Calma dolores musculares, hematomas leves y tensiones.',
+          'Acción antiinflamatoria, analgésica y regenerativa. Calma dolores musculares, hematomas leves y tensiones.',
       },
       {
         name: 'Romero',
         description:
-          'estimula la circulación, alivia contracturas y revitaliza zonas de dolor o pesadez.',
+          'Estimula la circulación, alivia contracturas y revitaliza zonas de dolor o pesadez.',
       },
       {
         name: 'Lavanda y Romero',
         description:
-          'combinación equilibrada que relaja, desinflama y tonifica.',
+          'Combinación equilibrada que relaja, desinflama y tonifica.',
       },
       {
         name: 'Caléndula',
         description:
-          'ideal para pieles irritadas, con eccemas o pequeñas heridas. Aporta efecto calmante, cicatrizante y antiinflamatorio.',
+          'Ideal para pieles irritadas, con eccemas o pequeñas heridas. Aporta efecto calmante, cicatrizante y antiinflamatorio.',
       },
     ],
     howToUse: [
@@ -615,21 +619,21 @@ export const products: Product[] = [
       {
         name: 'Pera y Gardenia',
         description:
-          'delicada, floral y frutal, ideal para momentos de calma y conexión.',
+          'Delicada, floral y frutal, ideal para momentos de calma y conexión.',
       },
       {
         name: 'Frutos Rojos',
         description:
-          'energética y dulce, perfecta para revitalizar los sentidos.',
+          'Energética y dulce, perfecta para revitalizar los sentidos.',
       },
       {
         name: 'Lavanda',
         description:
-          'relajante, armoniza mente y cuerpo, ideal para el descanso.',
+          'Relajante, armoniza mente y cuerpo, ideal para el descanso.',
       },
       {
         name: 'Naranja',
-        description: 'cítrica y fresca, estimula el ánimo y equilibra la piel.',
+        description: 'Cítrica y fresca, estimula el ánimo y equilibra la piel.',
       },
     ],
     howToUse: [
@@ -979,21 +983,21 @@ export const products: Product[] = [
     variants: [
       {
         name: 'Naranja',
-        description: 'estimula la renovación celular y aporta luminosidad.',
+        description: 'Estimula la renovación celular y aporta luminosidad.',
       },
       {
         name: 'Lavanda',
         description:
-          'calma la piel, reduce rojeces y ayuda a cerrar los poros.',
+          'Calma la piel, reduce rojeces y ayuda a cerrar los poros.',
       },
       {
         name: 'Caléndula',
-        description: 'regenerativa, ideal para pieles sensibles o irritadas.',
+        description: 'Regenerativa, ideal para pieles sensibles o irritadas.',
       },
       {
         name: 'Zanahoria',
         description:
-          'rica en betacarotenos, promueve un tono uniforme y saludable.',
+          'Rica en betacarotenos, promueve un tono uniforme y saludable.',
       },
     ],
     presentations: [{ size: '100cc', price: 3500 }],
@@ -1019,51 +1023,51 @@ export const products: Product[] = [
     variants: [
       {
         name: 'Árnica',
-        description: 'ideal para golpes, moretones y tensiones musculares.',
+        description: 'Ideal para golpes, moretones y tensiones musculares.',
       },
       {
         name: 'Árnica, romero y cannabis',
         description:
-          'fórmula intensiva para aliviar dolores musculares, inflamaciones y contracturas.',
+          'Fórmula intensiva para aliviar dolores musculares, inflamaciones y contracturas.',
       },
       {
         name: 'Caléndula',
         description:
-          'calmante y regeneradora, perfecta para piel sensible, irritada o dañada.',
+          'Calmante y regeneradora, perfecta para piel sensible, irritada o dañada.',
       },
       {
         name: 'Eucalipto',
         description:
-          'ayuda a descongestionar y relajar, recomendado para masajes en zonas de tensión.',
+          'Ayuda a descongestionar y relajar, recomendado para masajes en zonas de tensión.',
       },
       {
         name: 'Lavanda',
         description:
-          'relajante y equilibrante, favorece la calma y el descanso.',
+          'Relajante y equilibrante, favorece la calma y el descanso.',
       },
       {
         name: 'Manzanilla',
         description:
-          'suavizante y antiinflamatoria, indicada para piel delicada o con irritaciones leves.',
+          'Suavizante y antiinflamatoria, indicada para piel delicada o con irritaciones leves.',
       },
       {
         name: 'Orégano',
         description:
-          'con efecto purificante y tonificante, ideal para revitalizar.',
+          'Con efecto purificante y tonificante, ideal para revitalizar.',
       },
       {
         name: 'Romero',
         description:
-          'estimula la circulación, relaja tensiones localizadas y revitaliza tejidos cansados.',
+          'Estimula la circulación, relaja tensiones localizadas y revitaliza tejidos cansados.',
       },
       {
         name: 'Tilo',
-        description: 'contribuye a la relajación y al bienestar general.',
+        description: 'Contribuye a la relajación y al bienestar general.',
       },
       {
         name: 'Tomillo',
         description:
-          'con propiedades fortalecedoras y revitalizantes, recomendado para masajes energizantes.',
+          'Con propiedades fortalecedoras y revitalizantes, recomendado para masajes energizantes.',
       },
     ],
     presentations: [{ size: '60cc', price: 20000 }],
@@ -1174,32 +1178,32 @@ export const products: Product[] = [
       {
         name: 'Rosa',
         description:
-          'romántica y equilibrante, eleva el ánimo y brinda serenidad.',
+          'Romántica y equilibrante, eleva el ánimo y brinda serenidad.',
       },
       {
         name: 'Lavanda',
-        description: 'relajante y calmante, ideal para promover el descanso.',
+        description: 'Relajante y calmante, ideal para promover el descanso.',
       },
       {
         name: 'Jazmín',
-        description: 'sensual y armonizante, despierta emociones positivas.',
+        description: 'Sensual y armonizante, despierta emociones positivas.',
       },
       {
         name: 'Menta',
         description:
-          'fresca y revitalizante, perfecta para estimular la energía.',
+          'Fresca y revitalizante, perfecta para estimular la energía.',
       },
       {
         name: 'Limón',
-        description: 'cítrica y purificante, aporta frescura y claridad.',
+        description: 'Cítrica y purificante, aporta frescura y claridad.',
       },
       {
         name: 'Tilo',
-        description: 'suave y tranquilizante, ayuda a relajar la mente.',
+        description: 'Suave y tranquilizante, ayuda a relajar la mente.',
       },
       {
         name: 'Vainilla',
-        description: 'dulce y reconfortante, invita al bienestar y la calidez.',
+        description: 'Dulce y reconfortante, invita al bienestar y la calidez.',
       },
     ],
     presentations: [{ size: 'pack x 3u', price: 5000 }],
@@ -1242,6 +1246,62 @@ export const products: Product[] = [
       mantequillaCorporal3,
       mantequillaCorporal4,
     ],
+    isBestSeller: false,
+  },
+  {
+    id: 34,
+    name: 'Jabones artesanales',
+    shortDescription: 'Limpieza suave, cuidado profundo',
+    category: 'Cosméticos',
+    description:
+      'Los Jabones Artesanales son elaborados con esencias naturales y principios activos botánicos que limpian delicadamente la piel mientras la nutren y protegen. Cada variedad está pensada para acompañar diferentes necesidades de cuidado personal, ofreciendo una experiencia sensorial única en cada uso.',
+    presentations: [{ size: '100gr', price: 2000 }],
+    variants: [
+      {
+        name: 'Avena y Naranja',
+        description: 'Exfoliante suave y revitalizante, ilumina la piel.',
+      },
+      {
+        name: 'Lavanda y Romero',
+        description:
+          'Relajante y purificante, ideal para pieles mixtas o grasas.',
+      },
+      {
+        name: 'Caléndula',
+        description:
+          'Calmante y regenerativa, perfecta para pieles sensibles o irritadas.',
+      },
+      {
+        name: 'Argán',
+        description:
+          'Nutritivo y antioxidante, combate el envejecimiento cutáneo.',
+      },
+      {
+        name: 'Coco',
+        description: 'Hidratante y emoliente, aporta suavidad y frescura.',
+      },
+      {
+        name: 'Tilo y Manzanilla',
+        description: 'Calmante y equilibrante, brinda bienestar y descanso.',
+      },
+      {
+        name: 'Cannabis y Árnica',
+        description:
+          'Antiinflamatorio y reparador, alivia tensiones y protege la piel.',
+      },
+    ],
+    howToUse: [
+      'Aplicar sobre la piel húmeda, masajear suavemente hasta formar espuma y enjuagar con abundante agua.',
+      'Apto para uso diario en rostro y cuerpo.',
+    ],
+    precautions: [
+      'Evitar contacto con ojos y mucosas.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: jabon,
+    images: [jabon, jabon2],
     isBestSeller: false,
   },
 ];

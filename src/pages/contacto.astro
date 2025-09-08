@@ -5,7 +5,12 @@ import heroLetters from '@/assets/heroLetters.webp';
 import CopyEmailButton from '@/components/islands/CopyEmailButton.tsx';
 import logo from '@/assets/Logo.webp';
 
-import { Envelope, InstagramLogo, WhatsappLogo } from '@phosphor-icons/react';
+import {
+  Envelope,
+  InstagramLogo,
+  TiktokLogo,
+  WhatsappLogo,
+} from '@phosphor-icons/react';
 import '@/styles/globals.css';
 ---
 
@@ -61,7 +66,7 @@ import '@/styles/globals.css';
             CONTACTO
           </h2>
           <div
-            class="flex font-fredoka w-full flex-row items-start justify-start"
+            class="flex font-fredoka w-full flex-col gap-5 tablet:gap-7 items-start justify-start"
           >
             <a
               target="_blank"
@@ -73,8 +78,21 @@ import '@/styles/globals.css';
                 className="size-6 text-primary-500 tablet:size-9"
               /><p>@greenglow_ar</p>
             </a>
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@greenglow_ar"
+              class="flex w-full flex-row items-center gap-2 text-base tablet:gap-5 tablet:text-lg laptop:text-3xl"
+              rel="noreferrer"
+            >
+              <TiktokLogo className="size-6 text-primary-500 tablet:size-9" /><p
+              >
+                @greenglow_ar
+              </p>
+            </a>
           </div>
-          <div class="flex w-full flex-row items-start justify-start">
+          <div
+            class="flex font-fredoka w-full flex-row items-start justify-start"
+          >
             <a
               href="#"
               class="flex w-full flex-row items-center gap-2 text-base tablet:gap-5 tablet:text-lg laptop:text-3xl"
@@ -83,7 +101,7 @@ import '@/styles/globals.css';
               <CopyEmailButton client:load email="greenglow.ar@gmail.com" />
             </a>
           </div>
-          <div class="flex w-full flex-col gap-5 tablet:gap-8">
+          <div class="flex font-fredoka w-full flex-col gap-5 tablet:gap-8">
             <a
               target="_blank"
               rel="noopener noreferrer"
