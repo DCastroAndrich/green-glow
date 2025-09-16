@@ -24,7 +24,7 @@ import HowToBuyDialogNavBar from './HowToBuyDialogNavBar';
 import logoIcon from '@/assets/Logo.webp';
 
 const items = [
-  { nombre: 'Todos los productos', href: '/products', icon: FlowerLotus },
+  { nombre: 'Todos los productos', href: '/productos', icon: FlowerLotus },
   { nombre: 'Aceites', href: '/productos/aceites', icon: Drop },
   { nombre: 'Cosmeticos', href: '/productos/cosmeticos', icon: MarkerCircle },
   { nombre: 'Cremas', href: '/productos/cremas', icon: Coin },
@@ -78,7 +78,7 @@ export const Navbar = () => {
                   href="/productos"
                   className={cn(
                     'px-3 py-2 transition-colors duration-200',
-                    isActive('/products') && activeClass
+                    isActive('/productos') && activeClass
                   )}
                 >
                   Productos
@@ -122,7 +122,7 @@ export const Navbar = () => {
               </a>
               <HowToBuyDialogNavBar />
               <a
-                href="/products"
+                href="/productos"
                 className="text-lg"
                 onClick={() => setIsOpen(false)}
               >
