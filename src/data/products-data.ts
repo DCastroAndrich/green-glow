@@ -1,6 +1,7 @@
 /* aceites */
 import aceiteAntistress from '@/assets/prod-Aceite-anti-stress.webp';
 import aceiteEsencial from '@/assets/prod-Aceite-esencial.jpeg';
+import aceiteEsencial2 from '@/assets/prod-Aceite-esencial2.jpeg';
 import aceiteMasajes from '@/assets/prod-Aceite-de-Cannabis-y-Arnica.webp';
 import aceiteDemaquillante from '@/assets/prod-Aceite-desmaquillante.webp';
 import aceiteDemaquillante2 from '@/assets/prod-Aceite-desmaquillante2.jpeg';
@@ -16,6 +17,10 @@ import cremaAcida2 from '@/assets/prod-Crema-acida2.jpeg';
 import cremaCelulitis from '@/assets/prod-Crema-anti-celulitis.webp';
 import cremaDescontracturante from '@/assets/prod-Crema-descontracturante.webp';
 import cremaFacial from '@/assets/prod-Crema-Facial.webp';
+import cremaFacial2 from '@/assets/prod-Crema-facial2.jpeg';
+import cremaFacial3 from '@/assets/prod-Crema-facial3.jpeg';
+import cremaFacial4 from '@/assets/prod-Crema-facial4.jpeg';
+import cremaFacial5 from '@/assets/prod-Crema-facial5.jpeg';
 import cremaMedicinal from '@/assets/prod-Crema-medicinal.webp';
 import cremaManos from '@/assets/prod-Crema-para-manos-II.webp';
 import cremaManos2 from '@/assets/prod-Crema-para-manos2.jpeg';
@@ -39,6 +44,7 @@ import serumFacial2 from '@/assets/prod-Serum-facial2.jpeg';
 import tintura from '@/assets/prod-Tintura-de-cannabis-y-arnica.webp';
 import tinturaHerbal from '@/assets/prod-Tintura-herbal.jpeg';
 import tonicoFacial from '@/assets/prod-Tonico-facial.webp';
+import tonicoFacial2 from '@/assets/prod-Tonico-facial2.jpeg';
 import unguentoMedicinal from '@/assets/prod-Unguento-medicinales.webp';
 import unguentoArnica from '@/assets/prod-Unguento-arnica.jpeg';
 import unguentoArnRomCann from '@/assets/prod-Unguento-arnica-romero-cannabis.jpeg';
@@ -54,6 +60,7 @@ import unguentoVick from '@/assets/prod-Unguento-VICK.webp';
 import unguentoDescongestivo from '@/assets/prod-Unguento-descongestivo.jpeg';
 import cremaBB from '@/assets/prod-Crema-BB.jpeg';
 import contornoOjos from '@/assets/prod-Contorno-ojos.jpeg';
+import contornoOjos2 from '@/assets/prod-Contorno-ojos2.jpeg';
 import saquitos1 from '@/assets/prod-Saquitos-1.jpeg';
 import saquitos2 from '@/assets/prod-Saquitos-2.jpeg';
 import saquitos3 from '@/assets/prod-Saquitos-3.jpeg';
@@ -63,6 +70,8 @@ import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal-3.jpeg';
 import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal-4.jpeg';
 import jabon from '@/assets/prod-Jabones.jpeg';
 import jabon2 from '@/assets/prod-Jabones-2.jpeg';
+import cremaExfoliante from '@/assets/prod-Crema-exfoliante.jpeg';
+import cremaExfoliante2 from '@/assets/prod-Crema-exfoliante2.jpeg';
 
 //nuevas imagenes
 import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
@@ -73,6 +82,10 @@ import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
 import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
 
 import cremaAntiAge from '@/assets/prod-Crema-antiage.jpeg';
+import cremaAntiArrugas from '@/assets/prod-Crema-antiarrugas.jpeg';
+import cremaAntiArrugas2 from '@/assets/prod-Crema-antiarrugas2.jpeg';
+
+import cremaCorporal from '@/assets/prod-Crema-corporal.jpeg';
 
 import cremaHidratante from '@/assets/prod-Crema-hidratante.jpeg';
 import cremaHidratante2 from '@/assets/prod-Crema-hidratante-2.jpeg';
@@ -183,7 +196,7 @@ export const products: Product[] = [
       'Mantener en lugar fresco, seco y fuera del alcance de los niños.',
     ],
     imageUrl: aceiteAntistress,
-    images: [aceiteAntistress, aceiteEsencial],
+    images: [aceiteAntistress, aceiteEsencial, aceiteEsencial2],
     isBestSeller: false,
   },
   {
@@ -508,7 +521,7 @@ export const products: Product[] = [
     shortDescription: 'Cuidado consciente para cada tipo de piel',
     category: 'Cremas',
     description:
-      'Nuestra línea de Cremas Faciales ha sido desarrollada con una base natural compuesta por extracto de cannabis, agua destilada, glicerina vegetal y vitamina E, creando una sinergia perfecta entre hidratación, nutrición y protección antioxidante.Cada variedad responde a una necesidad específica de la piel, integrando aceites esenciales, extractos botánicos y principios activos seleccionados con enfoque holístico. Apta para todo tipo de piel, incluso las más delicadas.',
+      'Nuestra línea de Cremas Faciales ha sido desarrollada con una base natural compuesta por extracto de cannabis, agua destilada, glicerina vegetal y vitamina E, creando una sinergia perfecta entre hidratación, nutrición y protección antioxidante. Cada variedad responde a una necesidad específica de la piel, integrando aceites esenciales, extractos botánicos y principios activos seleccionados con enfoque holístico. Apta para todo tipo de piel, incluso las más delicadas.',
     presentations: [
       { size: '30cc', price: 10000 },
       { size: '60cc', price: 20000 },
@@ -561,6 +574,13 @@ export const products: Product[] = [
       'Mantener fuera del alcance de los niños.',
     ],
     imageUrl: cremaFacial,
+    images: [
+      cremaFacial,
+      cremaFacial2,
+      cremaFacial3,
+      cremaFacial4,
+      cremaFacial5,
+    ],
     isBestSeller: false,
   },
   {
@@ -1011,6 +1031,7 @@ export const products: Product[] = [
       'Agitar antes de usar para activar los extractos naturales.',
     ],
     imageUrl: tonicoFacial,
+    images: [tonicoFacial, tonicoFacial2],
     isBestSeller: false,
   },
   {
@@ -1165,6 +1186,7 @@ export const products: Product[] = [
       'Uso externo.',
     ],
     imageUrl: contornoOjos,
+    images: [contornoOjos, contornoOjos2],
     isBestSeller: false,
   },
   {
@@ -1302,6 +1324,43 @@ export const products: Product[] = [
     ],
     imageUrl: jabon,
     images: [jabon, jabon2],
+    isBestSeller: false,
+  },
+  {
+    id: 35,
+    name: 'Crema exfoliante',
+    shortDescription: 'Renovación natural para una piel luminosa',
+    category: 'Cosméticos',
+    description:
+      'La crema exfoliante combina una base nutritiva con partículas naturales de café, azúcar y avena, que ayudan a eliminar suavemente las células muertas de la piel, estimulando la renovación celular y favoreciendo una textura más suave y uniforme. Enriquecida con aceites esenciales de oliva y jojoba, aporta hidratación profunda, mientras que la vitamina E actúa como antioxidante, protegiendo la piel contra el envejecimiento prematuro y manteniéndola firme y radiante.',
+    presentations: [{ size: '60cc', price: 5000 }],
+    variants: [
+      {
+        name: 'Café y azúcar',
+        description:
+          'Exfoliación intensa y energizante, ideal para revitalizar la piel apagada.',
+      },
+      {
+        name: 'Avena y almendras',
+        description:
+          'Exfoliación suave, calmante y nutritiva, perfecta para piel sensible o delicada.',
+      },
+    ],
+    howToUse: [
+      'Aplicar sobre la piel húmeda, masajeando con movimientos circulares en rostro o cuerpo según la variedad elegida.',
+      'Enjuagar con abundante agua tibia y finalizar con una crema hidratante para potenciar los resultados.',
+      'Se recomienda utilizar entre 1 y 2 veces por semana.',
+    ],
+    precautions: [
+      'Evitar contacto con ojos y mucosas.',
+      'No aplicar sobre piel irritada o con heridas abiertas.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Mantener fuera del alcance de los niños.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: cremaExfoliante,
+    images: [cremaExfoliante, cremaExfoliante2],
     isBestSeller: false,
   },
 ];

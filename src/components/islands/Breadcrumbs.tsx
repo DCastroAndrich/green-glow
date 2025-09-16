@@ -31,7 +31,7 @@ const Breadcrumbs = ({
   if (isAllProducts) {
     segments.push({ label: 'Todos los productos', href: '' });
   } else {
-    segments.push({ label: 'Productos', href: '/products' });
+    segments.push({ label: 'Productos', href: '/productos' });
     if (categoryName && categorySlug) {
       segments.push({
         label: categoryName,
