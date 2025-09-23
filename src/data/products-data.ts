@@ -72,11 +72,18 @@ import jabon from '@/assets/prod-Jabones.jpeg';
 import jabon2 from '@/assets/prod-Jabones-2.jpeg';
 import cremaExfoliante from '@/assets/prod-Crema-exfoliante.jpeg';
 import cremaExfoliante2 from '@/assets/prod-Crema-exfoliante2.jpeg';
+import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
+import serumCapilar2 from '@/assets/prod-Serum-capilar2.jpeg';
+import serumCapilar3 from '@/assets/prod-Serum-capilar3.jpeg';
+import serumCapilar4 from '@/assets/prod-Serum-capilar4.jpeg';
+import serumCapilarTrio from '@/assets/prod-Serum-capilar-trio.jpeg';
 
 //nuevas imagenes
-import serumCapilar from '@/assets/prod-Serum-capilar.jpeg';
 
 import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
+import shampooHerbal2 from '@/assets/prod-Shampoo-herbal2.jpeg';
+import shampooHerbal3 from '@/assets/prod-Shampoo-herbal3.jpeg';
+import shampooHerbal4 from '@/assets/prod-Shampoo-herbal4.jpeg';
 
 import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
 import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
@@ -1361,6 +1368,97 @@ export const products: Product[] = [
     ],
     imageUrl: cremaExfoliante,
     images: [cremaExfoliante, cremaExfoliante2],
+    isBestSeller: false,
+  },
+  {
+    id: 36,
+    name: 'Sérum capilar',
+    shortDescription: 'Cuidado intensivo para un cabello saludable y brillante',
+    category: 'Cosméticos',
+    description:
+      'El sérum capilar está formulado con una sinergia de aceites vegetales y esenciales que nutren profundamente el cabello desde la raíz hasta las puntas. El aceite de jojoba equilibra la producción de sebo, mientras que el de argán aporta suavidad y brillo natural. El aceite de ricino fortalece la fibra capilar y estimula el crecimiento, acompañado por el aceite de coco que proporciona humectación intensa y previene la resequedad. La vitamina E actúa como antioxidante, protegiendo contra los radicales libres y el daño ambiental. Los aceites esenciales de romero, lavanda, menta y ylang-ylang completan la fórmula, revitalizando el cuero cabelludo, favoreciendo la circulación y dejando una sensación fresca y aromática.',
+    presentations: [{ size: '30ml', price: 5000 }],
+    variants: [
+      {
+        name: 'Nutritivo',
+        description:
+          'Pensado para cabellos opacos o deshidratados, aporta brillo, suavidad y elasticidad.',
+      },
+      {
+        name: 'Reparador & Humectante',
+        description:
+          'Ideal para cabellos dañados por tinturas, calor o tratamientos químicos, restaura la fibra capilar y sella puntas abiertas.',
+      },
+      {
+        name: 'Anti-caída',
+        description:
+          'Fortalece el folículo piloso, estimula el crecimiento y reduce la pérdida excesiva de cabello.',
+      },
+    ],
+    howToUse: [
+      'Aplicar unas gotas en las palmas de las manos y distribuir de medios a puntas sobre el cabello limpio y húmedo o seco.',
+      'En el caso de la variedad anti-caída, masajear suavemente el cuero cabelludo con el sérum, favoreciendo la absorción y la circulación sanguínea.',
+      'No enjuagar.',
+      'Puede usarse de 2 a 3 veces por semana o según la necesidad del cabello.',
+    ],
+    precautions: [
+      'Evitar contacto con ojos y mucosas.',
+      'No aplicar sobre piel irritada o con heridas abiertas.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Mantener fuera del alcance de los niños.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: serumCapilarTrio,
+    images: [
+      serumCapilarTrio,
+      serumCapilar,
+      serumCapilar2,
+      serumCapilar3,
+      serumCapilar4,
+    ],
+    isBestSeller: false,
+  },
+  {
+    id: 37,
+    name: 'Shampoo Herbal',
+    shortDescription: 'Limpieza suave y fortaleza natural para tu cabello',
+    category: 'Cosméticos',
+    description:
+      'El Shampoo Herbal combina principios activos de origen natural con vitaminas y extractos botánicos que fortalecen y revitalizan el cabello desde la raíz. El pantenol y la biotina promueven la regeneración capilar, aportando volumen, brillo y resistencia. La queratina hidrolizada repara la fibra dañada, mientras que los aceites esenciales de romero, lavanda, menta, jojoba y ylang-ylang equilibran el cuero cabelludo, estimulan la circulación y favorecen un crecimiento saludable. La miel y la proteína de leche de avena hidratan en profundidad, suavizando la textura, y el aloe vera calma y protege contra la resequedad. Finalmente, los extractos de ortiga, cola de caballo, ginseng y romero completan la fórmula aportando fuerza, vitalidad y frescura.',
+    presentations: [{ size: '200ml', price: 8000 }],
+    variants: [
+      {
+        name: 'Crecimiento y Fuerza',
+        description:
+          'Activa la circulación del cuero cabelludo, nutre el bulbo capilar y promueve un crecimiento más fuerte, sano y con mayor densidad.',
+      },
+      {
+        name: 'Humectante y Reparador',
+        description:
+          'Ideal para cabellos secos, quebradizos o dañados por químicos y calor, aporta hidratación profunda y devuelve elasticidad.',
+      },
+      {
+        name: 'Anti-caída',
+        description:
+          'Fortalece el folículo piloso, disminuye la pérdida de cabello y estimula su regeneración.',
+      },
+    ],
+    howToUse: [
+      'Aplicar una cantidad moderada sobre el cabello húmedo, masajear suavemente el cuero cabelludo con movimientos circulares y dejar actuar unos minutos para potenciar la absorción de sus activos.',
+      'Enjuagar con abundante agua tibia.',
+      'No enjuagar.',
+    ],
+    precautions: [
+      'Evitar contacto con ojos y mucosas.',
+      'No aplicar sobre piel irritada o con heridas abiertas.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Mantener fuera del alcance de los niños.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: shampooHerbal,
+    images: [shampooHerbal, shampooHerbal2, shampooHerbal3, shampooHerbal4],
     isBestSeller: false,
   },
 ];
