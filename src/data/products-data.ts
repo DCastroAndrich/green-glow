@@ -1197,7 +1197,7 @@ export const products: Product[] = [
     category: 'Cosméticos',
     description:
       'La BB Cream Color es un tratamiento multifuncional que fusiona el poder de la cosmética con el cuidado profundo de la piel. Su fórmula combina vitaminas, minerales y activos regeneradores para hidratar, proteger y unificar el tono del rostro en un solo paso. La BB Crema aporta múltiples beneficios: hidratación y nutrición gracias a la acción de las vitaminas A, C y E, que aportan luminosidad y vitalidad; efecto anti-edad con ácido hialurónico y colágeno, que mejoran la elasticidad y reducen la apariencia de líneas finas; protección natural frente a los rayos UV y la contaminación gracias al óxido de zinc y al óxido de titanio, actuando como filtros minerales; cobertura ligera y uniforme, brindada por pigmentos minerales que suavizan imperfecciones sin obstruir los poros; acabado natural, ideal para el uso diario en todo tipo de piel.',
-    presentations: [{ size: '60cc', price: 20000 }],
+    presentations: [{ size: '60cc', price: 25000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la piel limpia y seca, distribuyendo de manera uniforme con la yema de los dedos o una esponja de maquillaje.',
       'Puede usarse sola o como base previa al maquillaje.',
