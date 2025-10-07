@@ -39,8 +39,14 @@ import oroLiquido from '@/assets/prod-Oro-liquido.webp';
 import pomadaRegenerador from '@/assets/prod-Pomada-Regeneradora.webp';
 import protectorSolar from '@/assets/prod-Protector-solar.webp';
 import protectorSolar2 from '@/assets/prod-Protector-solar2.jpeg';
+import protectorSolar3 from '@/assets/prod-Protector-solar3.jpeg';
+import protectorSolar4 from '@/assets/prod-Protector-solar4.jpeg';
+import protectorSolar5 from '@/assets/prod-Protector-solar5.jpeg';
 import serumFacial from '@/assets/prod-Serum-facial.webp';
 import serumFacial2 from '@/assets/prod-Serum-facial2.jpeg';
+import serumFacial3 from '@/assets/prod-Serum-facial3.jpeg';
+import serumFacial4 from '@/assets/prod-Serum-facial4.jpeg';
+
 import tintura from '@/assets/prod-Tintura-de-cannabis-y-arnica.webp';
 import tinturaHerbal from '@/assets/prod-Tintura-herbal.jpeg';
 import tonicoFacial from '@/assets/prod-Tonico-facial.webp';
@@ -77,13 +83,12 @@ import serumCapilar2 from '@/assets/prod-Serum-capilar2.jpeg';
 import serumCapilar3 from '@/assets/prod-Serum-capilar3.jpeg';
 import serumCapilar4 from '@/assets/prod-Serum-capilar4.jpeg';
 import serumCapilarTrio from '@/assets/prod-Serum-capilar-trio.jpeg';
-
-//nuevas imagenes
-
 import shampooHerbal from '@/assets/prod-Shampoo-herbal.jpeg';
 import shampooHerbal2 from '@/assets/prod-Shampoo-herbal2.jpeg';
 import shampooHerbal3 from '@/assets/prod-Shampoo-herbal3.jpeg';
 import shampooHerbal4 from '@/assets/prod-Shampoo-herbal4.jpeg';
+
+//nuevas imagenes
 
 import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
 import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
@@ -918,8 +923,25 @@ export const products: Product[] = [
     shortDescription: 'Defensa natural con nutrición profunda',
     category: 'Cosméticos',
     description:
-      'El Protector Solar Natural es una fusión armoniosa entre ciencia y naturaleza, diseñado para cuidar la piel del daño solar sin comprometer su equilibrio. Su fórmula suave, libre de químicos agresivos, protege mientras nutre y repara. El óxido de zinc actúa como filtro físico mineral, formando una barrera efectiva contra los rayos UVA y UVB. En sinergia, el aceite de coco, la esencia de jojoba, la zanahoria y la rosa mosqueta aportan hidratación, regeneración y elasticidad, protegiendo la piel del envejecimiento prematuro y las agresiones externas. La glicerina y la vitamina E refuerzan su acción antioxidante, dejando la piel suave, luminosa y protegida. Ideal para uso diario en rostro y cuerpo, incluso en pieles sensibles.',
-    presentations: [{ size: '60cc', price: 8000 }],
+      'El Protector Solar ofrece una barrera eficaz y saludable contra los rayos UVA y UVB, combinando filtros minerales naturales con aceites y extractos botánicos que nutren y calman la piel. Su fórmula con óxido de zinc y dióxido de titanio protege de manera física, reflejando los rayos solares sin obstruir los poros. Los aceites de jojoba, jengibre y manzanilla hidratan profundamente, previenen la irritación y combaten la inflamación causada por la exposición solar. La vitamina E, antioxidante por excelencia, ayuda a prevenir el envejecimiento prematuro, mientras que el aceite esencial de lavanda aporta propiedades calmantes y equilibrantes. El resultado es una protección completa, con textura ligera y acabado natural, ideal para todo tipo de piel.',
+    presentations: [{ size: '60cc', price: 10000 }],
+    variants: [
+      {
+        name: 'FPS 40',
+        description:
+          'Protección diaria para la rutina urbana y exposiciones moderadas. Ideal para uso facial y corporal.',
+      },
+      {
+        name: 'FPS 40 Resistente al agua',
+        description:
+          'Pensado para actividades al aire libre o días de playa y piscina; mantiene su efectividad incluso con transpiración o contacto con el agua.',
+      },
+      {
+        name: 'FPS 50',
+        description:
+          'Máxima protección frente a los rayos solares, recomendada para pieles sensibles, claras o sometidas a tratamientos dermatológicos.',
+      },
+    ],
     howToUse: [
       'Aplicar una cantidad suficiente sobre la piel limpia y seca, al menos 20 minutos antes de la exposición solar.',
       'Reaplicar cada 2 horas y después de nadar, sudar o secarse con toalla.',
@@ -932,7 +954,13 @@ export const products: Product[] = [
       'Conservar en lugar fresco y oscuro.',
     ],
     imageUrl: protectorSolar,
-    images: [protectorSolar, protectorSolar2],
+    images: [
+      protectorSolar,
+      protectorSolar2,
+      protectorSolar3,
+      protectorSolar4,
+      protectorSolar5,
+    ],
     isBestSeller: false,
   },
   {
@@ -943,6 +971,18 @@ export const products: Product[] = [
     description:
       'El Sérum Facial es un elixir concentrado de juventud y vitalidad, formulado para ofrecer una hidratación profunda y una acción reparadora intensiva. Su textura ligera penetra en las capas más profundas de la piel, dejando un acabado suave, radiante y sin residuos grasos. En su núcleo, el ácido hialurónico y la glicerina vegetal trabajan en sinergia para retener la humedad y restaurar la elasticidad. El colágeno y la elastina promueven firmeza, mientras que el retinol suaviza líneas finas y potencia la renovación celular. El agua de azahar, conocida por sus propiedades calmantes, se combina con la vitamina E para proteger la piel del estrés oxidativo y aportar luminosidad natural. Indicado para todo tipo de piel, especialmente las que buscan revitalizar, prevenir el envejecimiento y potenciar su belleza natural.',
     presentations: [{ size: '20cc', price: 10000 }],
+    variants: [
+      {
+        name: 'Despigmentante',
+        description:
+          'Formulado para reducir manchas e irregularidades del tono, mejorar la luminosidad y unificar el color de la piel gracias a la acción conjunta del retinol y la niacinamida. Ideal para pieles opacas o con signos de fotoenvejecimiento.',
+      },
+      {
+        name: 'Iluminador',
+        description:
+          'Devuelve el brillo natural, suaviza la textura y potencia la vitalidad del rostro con una hidratación profunda y duradera. Perfecto para pieles cansadas o deshidratadas que buscan un aspecto radiante y saludable.',
+      },
+    ],
     howToUse: [
       'Aplicar 2 a 3 gotas sobre el rostro limpio y seco, masajeando con movimientos ascendentes hasta su absorción.',
       'Ideal para usar por la noche o antes de la crema hidratante.',
@@ -955,7 +995,7 @@ export const products: Product[] = [
       'Almacenar en lugar fresco, seco y oscuro.',
     ],
     imageUrl: serumFacial,
-    images: [serumFacial, serumFacial2],
+    images: [serumFacial, serumFacial2, serumFacial3, serumFacial4],
     isBestSeller: true,
   },
   {
@@ -1157,7 +1197,7 @@ export const products: Product[] = [
     category: 'Cosméticos',
     description:
       'La BB Cream Color es un tratamiento multifuncional que fusiona el poder de la cosmética con el cuidado profundo de la piel. Su fórmula combina vitaminas, minerales y activos regeneradores para hidratar, proteger y unificar el tono del rostro en un solo paso. La BB Crema aporta múltiples beneficios: hidratación y nutrición gracias a la acción de las vitaminas A, C y E, que aportan luminosidad y vitalidad; efecto anti-edad con ácido hialurónico y colágeno, que mejoran la elasticidad y reducen la apariencia de líneas finas; protección natural frente a los rayos UV y la contaminación gracias al óxido de zinc y al óxido de titanio, actuando como filtros minerales; cobertura ligera y uniforme, brindada por pigmentos minerales que suavizan imperfecciones sin obstruir los poros; acabado natural, ideal para el uso diario en todo tipo de piel.',
-    presentations: [{ size: '30cc', price: 8000 }],
+    presentations: [{ size: '60cc', price: 20000 }],
     howToUse: [
       'Aplicar una pequeña cantidad sobre la piel limpia y seca, distribuyendo de manera uniforme con la yema de los dedos o una esponja de maquillaje.',
       'Puede usarse sola o como base previa al maquillaje.',
