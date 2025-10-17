@@ -74,6 +74,7 @@ import mantequillaCorporal from '@/assets/prod-Mantequilla-corporal.jpeg';
 import mantequillaCorporal2 from '@/assets/prod-Mantequilla-corporal-2.jpeg';
 import mantequillaCorporal3 from '@/assets/prod-Mantequilla-corporal-3.jpeg';
 import mantequillaCorporal4 from '@/assets/prod-Mantequilla-corporal-4.jpeg';
+import mantequillaCorporal5 from '@/assets/prod-Mantequilla-corporal-5.jpeg';
 import jabon from '@/assets/prod-Jabones.jpeg';
 import jabon2 from '@/assets/prod-Jabones-2.jpeg';
 import cremaExfoliante from '@/assets/prod-Crema-exfoliante.jpeg';
@@ -88,7 +89,19 @@ import shampooHerbal2 from '@/assets/prod-Shampoo-herbal2.jpeg';
 import shampooHerbal3 from '@/assets/prod-Shampoo-herbal3.jpeg';
 import shampooHerbal4 from '@/assets/prod-Shampoo-herbal4.jpeg';
 
+import locionAntibacterial from '@/assets/prod-Locion-antibacteriano.jpeg';
+
 //nuevas imagenes
+
+import facialNocheSuave from '@/assets/prod-Facial-noche-suave.jpeg';
+import facialNochePotente from '@/assets/prod-Facial-noche-potente.jpeg';
+import facialNocheIntensiva from '@/assets/prod-Facial-noche-intensiva.jpeg';
+import facialNocheReversa from '@/assets/prod-Facial-noche-reversa.jpeg';
+
+import kitFacialNocheSuave from '@/assets/prod-Kit-facial-noche-suave.jpeg';
+import kitFacialNochePotente from '@/assets/prod-Kit-facial-noche-potente.jpeg';
+import kitFacialNocheIntensiva from '@/assets/prod-Kit-facial-noche-intensiva.jpeg';
+import kitFacialNocheReversa from '@/assets/prod-Kit-facial-noche-reversa.jpeg';
 
 import serumAntioxidante from '@/assets/prod-Serum-antioxidante.jpeg';
 import serumAntioxidante2 from '@/assets/prod-Serum-antioxidante2.jpeg';
@@ -1314,6 +1327,7 @@ export const products: Product[] = [
       mantequillaCorporal2,
       mantequillaCorporal3,
       mantequillaCorporal4,
+      mantequillaCorporal5,
     ],
     isBestSeller: false,
   },
@@ -1487,7 +1501,6 @@ export const products: Product[] = [
     howToUse: [
       'Aplicar una cantidad moderada sobre el cabello húmedo, masajear suavemente el cuero cabelludo con movimientos circulares y dejar actuar unos minutos para potenciar la absorción de sus activos.',
       'Enjuagar con abundante agua tibia.',
-      'No enjuagar.',
     ],
     precautions: [
       'Evitar contacto con ojos y mucosas.',
@@ -1499,6 +1512,31 @@ export const products: Product[] = [
     ],
     imageUrl: shampooHerbal,
     images: [shampooHerbal, shampooHerbal2, shampooHerbal3, shampooHerbal4],
+    isBestSeller: false,
+  },
+  {
+    id: 38,
+    name: 'Locion antibacteriana',
+    shortDescription: 'Protección eficaz y cuidado natural para todo tu cuerpo',
+    category: 'Cosméticos',
+    description:
+      'La Loción Antibacteriana combina poder desinfectante con suavidad y bienestar para la piel. Su fórmula a base de cloruro de benzalconio, reconocido por su acción antiséptica de amplio espectro, elimina eficazmente bacterias y microorganismos sin resecar ni irritar la piel. El extracto de manzanilla aporta propiedades calmantes y antiinflamatorias, ayudando a mantener las manos suaves y protegidas, mientras que el áloe vera hidrata profundamente, promoviendo la regeneración celular y dejando una sensación fresca y natural después de cada aplicación. Ideal para el uso diario, especialmente en momentos donde la higiene es esencial, como antes de comer, después de viajar o manipular objetos en espacios públicos. Su textura ligera se absorbe rápidamente, sin dejar residuos pegajosos.',
+    presentations: [{ size: '60cc', price: 5000 }],
+    howToUse: [
+      'Aplicar una pequeña cantidad sobre las manos limpias y secas, frotar hasta su completa absorción.',
+      'No enjuagar.',
+      'Puede usarse tantas veces como sea necesario a lo largo del día.',
+    ],
+    precautions: [
+      'Evitar contacto con ojos y mucosas.',
+      'No aplicar sobre piel irritada o con heridas abiertas.',
+      'Almacenar en lugar fresco y protegido de la luz.',
+      'Suspender su uso ante cualquier signo de irritación.',
+      'Mantener fuera del alcance de los niños.',
+      'Uso externo únicamente.',
+    ],
+    imageUrl: locionAntibacterial,
+    images: [locionAntibacterial],
     isBestSeller: false,
   },
 ];
